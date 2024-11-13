@@ -1,0 +1,85 @@
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+	max-width: 1440px;
+}
+.logo{
+    width: 200px;
+}
+
+.navigation a {
+	
+	color: #000000;
+	margin-right: 20px;
+     width: 40px;
+}
+
+.logo img {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    animation: slideInOut 36s ease-in-out 1;
+    animation-delay: 3s; 
+    opacity: 1;
+height:20px;
+   
+   
+}
+
+
+.menu-toggle{
+    display: block;
+  margin-right: 50px;
+ 
+   
+}
+
+
+@keyframes slideInOut {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.desktop-navigation {
+	display: flex;
+}
+
+
+.mobile-navigation {
+	display:  none; 
+   
+}
+
+/* Styles pour petits écrans */
+@media (max-width: 768px) {
+	.desktop-navigation {
+		display: none; /* Masque la navigation de bureau */
+	}
+	.mobile-navigation {
+		display: flex; /* Affiche le menu hamburger */
+		align-items: center;
+        text-align: right;
+      
+	}
+}

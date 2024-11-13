@@ -1,0 +1,50 @@
+.charteringContainer {
+	background-image: url("../images/chartering-1.jpeg");
+	background-size: cover;
+	background-position: center;
+	height: 800px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-align: center;
+	position: relative;
+	border-radius: 10px 10px 0 0;
+	position: relative;
+	border-top: solid white 20px;
+	position: relative;
+	border-radius: 20px;
+}
+
+.charteringContent {
+	position: absolute;
+	top: 140px;
+	right: 100px;
+}
+
+.charteringTitle {
+	font-size: 3rem;
+	color: #ffffff;
+	text-align-last: left;
+}
+
+.charteringText {
+	font-size: 1.2rem;
+	text-align-last: left;
+}
+.projectContainer {
+	position: absolute;
+	top: 200px;
+	right: 100px;
+}
+
+.projectContainer a {
+	color: #ffffff;
+	font-size: 2rem;
+}
+
+.arrowIcon{
+  width: 2rem;
+  height: 2rem;
+  padding-right: 20px;
+}
