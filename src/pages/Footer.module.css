@@ -1,0 +1,51 @@
+/* Footer.module.css */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footerLinks {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Ajoute le wrap pour que les liens se répartissent sur plusieurs lignes */
+}
+
+.footerLinks a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerLinks a:hover {
+    color: #ccc; /* Change la couleur des liens au survol */
+}
+
+.footerSocial {
+    display: flex;
+    gap: 15px;
+}
+
+.footerSocial a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footerSocial a:hover {
+    color: #ccc; /* Change la couleur des icônes au survol */
+}
+
+.footerCopyright {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 10px;
+}

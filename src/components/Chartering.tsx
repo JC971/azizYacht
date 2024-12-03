@@ -2,6 +2,7 @@ import React from "react";
 import styles from './Chartering.module.css';  
 import arrow from "../images/rightArrow.png";
 
+
 const Chartering: React.FC = () => {
 	return (
 		<div className={styles.charteringContainer}>
