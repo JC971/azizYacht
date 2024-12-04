@@ -70,6 +70,10 @@ p {
 	letter-spacing: 2px;
 }
 
+a .newModels{
+	margin: 30px;
+}
+
 @media (max-width: 768px) {
 	.heroSection {
 		height: 600px;

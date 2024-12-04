@@ -108,7 +108,7 @@ const Caroussel: React.FC<CarousselProps> = ({ images }) => {
 		if (autoPlay) {
 			timeOut.current = setTimeout(() => {
 				slideRight();
-			}, 6000);
+			}, 4000);
 		}
 
 		return () => {

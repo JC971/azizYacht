@@ -58,6 +58,7 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: gainsboro;
+	background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,6 +67,7 @@
     border-radius: 50%;
     cursor: pointer;
     z-index: 10; 
+	color: transparent;
 }
 
 .caroussel_left_arrow {
@@ -73,12 +75,12 @@
 }
 
 .caroussel_right_arrow {
-    right: 100px; /* Adjust as needed */
+    right: 100px; 
 }
 
 .carousel-pagination {
     position: absolute;
-    bottom: 10px; /* Adjust based on your preference */
+    bottom: 10px; 
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -93,6 +95,7 @@
     margin: 0 10px;
     border-radius: 50%;
     background-color: #ccc;
+	background-color: gainsboro;
     cursor: pointer;
 }
 

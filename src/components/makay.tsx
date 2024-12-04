@@ -10,17 +10,20 @@ const Makay: React.FC = () => {
 			{
 				title: "Makay",
 				image: makayAnchored,
-				description: "",
+				description:
+					"The MAKAI M37 is designed to seamlessly blend luxury and performance, setting a new standard for powercats. Drawing inspiration from the timeless elegance and high performance of sports cars.",
 			},
 			{
 				title: "Port-side cabin",
 				image: makayBabord,
-				description: "",
+				description:
+					"The M37 motor catamaran is configured with two cabins: a master cabin and a guest cabin.",
 			},
 			{
 				title: "Makay Cockpit",
 				image: makayCockpitRs,
-				description: "",
+				description:
+					"The incredibly spacious cockpit area is among the largest in its class, setting a new standard for this model and boat size",
 			},
 		];
 

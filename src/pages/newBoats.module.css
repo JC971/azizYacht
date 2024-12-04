@@ -1,46 +1,39 @@
-.makayTitle {
-	display: flex;
-	text-align: center;
-}
-
-.makayContainer {
+.newCardsContainer {
 	display: flex;
 	justify-content: space-around;
 	padding: 20px;
 	margin-left: auto;
 	margin-right: auto;
+	flex-wrap: wrap;
+	margin-top: 80px;
 }
 
-.makayCard {
+.newCard {
+	width: 30%;
 	padding: 15px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	border-radius: 8px;
 	text-align: center;
 	background-color: #fff;
-    width: 30%;
-}
-.CardTitle {
-	font-size: 18px;
-	margin-bottom: 10px;
 }
 
-.makayImage {
+.newCardTitle {
+	font-size: 18px;
+	margin-bottom: 10px;
+
+	height: 60px;
+}
+
+.newCardImage {
 	width: 100%;
 	height: 300px;
 	border-radius: 4px;
 	object-fit: cover;
 }
 
-.cardDescription {
+.newCardDescription {
 	font-size: 14px;
 	margin-top: 10px;
 	text-align: left;
 	color: #555;
-}
-
-.makayLogo {
-	padding-top: 20px;
-	padding-left: 12px;
-
-	width: 144px;
 }
