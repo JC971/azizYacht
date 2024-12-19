@@ -15,7 +15,7 @@ import grandturismoMc from "../images/grand-turismo-6-1.jpg"
 const UsedBoats: React.FC = () => {
 	const newCards = [
 		{
-			title: "Mirage 33",
+			title: "Grand Tourismo",
 			image: grandTourismo1,
 			description: "",
 		},
@@ -26,23 +26,23 @@ const UsedBoats: React.FC = () => {
 		},
 
 		{
-			title: "Helm station",
+			title: "Saloon",
 			image: grandturismo5,
 			description:
 				"Ideal for families, allowing them to enjoy pleasant days and nights of nautical camping in complete autonomy.",
 		},
 		{
-			title: "Odyssey 25",
+			title: "Forward Cabin",
 			image: grandturismoFc,
 			Description: "",
 		},
 		{
-			title: "ODYSSEY",
+			title: "Owner's Cabin",
 			image: grandturismoMc,
 			Description: "",
 		},
 		{
-			title: "",
+			title: "Portside Cabin",
 			image: grandturismo7,
 			description:
 				"",

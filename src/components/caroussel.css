@@ -106,7 +106,10 @@
 
 @media (max-width: 768px){
 	.caroussel-container{
-		height: 330px;
+		height: 200px;
+	}
+	.caroussel-wrapper{
+		height: 200px;
 	}
 	
 }
