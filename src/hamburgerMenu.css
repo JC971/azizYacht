@@ -1,4 +1,3 @@
-/* Styles de base pour le conteneur de l'en-tête */
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -7,32 +6,24 @@
 	padding: 20px;
 }
 
-.logo img {
-	width: 60px;
-	margin-left: 30px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	animation: slideInOut 36s ease-in-out 1;
-	animation-delay: 3s;
-	opacity: 1;
-}
-
-.hamburger-menu{
+.hamburger-menu {
 	position: relative;
+
 }
 
 /* Styles du menu hamburger */
 .hamburger-menu .menu-toggle {
-	font-size: 24px;
+	font-size: 16px;
 	cursor: pointer;
 	background: none;
 	border: none;
 	display: block;
-	z-index: 1001; /* Assurez-vous que le bouton est au-dessus du contenu */
+	z-index: 1001;
+	margin-right: 15px;
 }
 
 .hamburger-menu .navigation {
-	display: none; 
+	display: none;
 	flex-direction: column;
 	position: absolute;
 	top: 60px;
@@ -42,29 +33,30 @@
 	box-shadow: 0 4px 8px rgba(94, 97, 104, 0.903);
 	z-index: 1000;
 }
-.navigation.show{
+
+nav.navigation.show{
+	display: flex;
+}
+
+.navigation.show {
 	position: absolute;
-	top: 70px;
+	top: 50px;
 	right: 10px;
-	width: 140px;
-	text-align-last: left;
-	
+	text-align: center;
 	padding: 0;
 }
 
 .hamburger-menu .navigation a {
-	padding: 15px;
-	color: #000;
 	text-decoration: none;
 	border-bottom: 1px solid #ddd;
-	width: 150px;
-	
-	margin-right: 0;
+	font-size: 8px;
+	margin: 0;
 	padding: 10px;
 }
 
 .hamburger-menu .navigation a:hover {
-	background-color: #f0f0f0;
+	background-color: #f0f0f028;
+	
 }
 
 /* Afficher la navigation mobile si isOpen est true */
@@ -78,9 +70,28 @@
 		display: none; /* Cache la navigation de bureau sur mobile */
 	}
 	.mobile-navigation {
-		display: flex; /* Affiche le menu hamburger sur mobile */
-		
+		display: flex; /* Affiche le menu hamburger */
+		align-items: center;
+		text-align: left;
 		
 	}
-}
+	
+	.navigation.show{
+		width: 100%;
+		background-color: RGB(86, 133, 160);
+	}
 
+	.navigation.show a{
+	text-transform: lowercase;
+	letter-spacing: 0;
+	font-size: 12px;
+	padding: 0;
+	margin-left: 0;
+	color: whitesmoke;
+	width: 100%;
+	border: none;
+	font-weight: bold;
+	line-height: 20px;
+	z-index: 1000;
+	}
+}

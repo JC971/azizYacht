@@ -17,21 +17,48 @@ const Contact = () => {
 		});
 	};
 
-	const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 
-		console.log("Data submitted:", formData);
-		alert("Thank you for your message!");
-		setFormData({
-			name: "",
-			email: "",
-			message: "",
-		});
+		// Validation optionnelle
+		if (!formData.name || !formData.email || !formData.message) {
+			alert("Tous les champs sont requis.");
+			return;
+		}
+
+		try {
+			const response = await fetch("http://localhost:5000/api/contact", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(formData),
+			});
+
+			if (response.ok) {
+				const data = await response.json();
+				console.log("Réponse du serveur : ", data);
+				alert("Votre message a été envoyé avec succès !");
+				setFormData({
+					name: "",
+					email: "",
+					message: "",
+				});
+			} else {
+				console.error("Erreur lors de l'envoi du message");
+				alert("Une erreur est survenue. Réessayez.");
+			}
+		} catch (error) {
+			console.error("Erreur lors de l'envoi des données au serveur :", error);
+			alert(
+				"Impossible de se connecter au serveur. Vérifiez votre connexion ou contactez l'administrateur."
+			);
+		}
 	};
 
 	return (
-        <>
-            <ContentContact />
+		<>
+			<ContentContact />
 			<div className="formulaire">
 				<form onSubmit={handleSubmit} className="form-contact">
 					<div>

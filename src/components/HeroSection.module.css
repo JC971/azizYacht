@@ -70,7 +70,7 @@ p {
 	letter-spacing: 2px;
 }
 
-a .newModels{
+a .newModels {
 	margin: 30px;
 }
 
@@ -84,6 +84,38 @@ a .newModels{
 	}
 
 	.heroNavigation a {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 425px) {
+	.heroContent h1 {
+		font-size: 18px;
+	}
+	.heroNavigation {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	.heroNavigation a {
+		font-size: 10px;
+	}
+	p {
+		text-align-last: left;
+		font-size: 1.1rem;
+		margin: 0px;
+		letter-spacing: 0;
+	}
+}
+
+@media (max-width: 375px) {
+	.heroSection{
+		display: flex;
+		width: 375px;
+	}
+
+	.heroContent h1 {
 		font-size: 14px;
+		line-height: 1.4;
+		margin: 0;
 	}
 }

@@ -87,7 +87,7 @@ const Caroussel: React.FC<CarousselProps> = ({ images }) => {
 export default Caroussel;
 */
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import "./caroussel.css";
 
 interface CarousselProps {
@@ -103,6 +103,20 @@ const Caroussel: React.FC<CarousselProps> = ({ images }) => {
 
 	// Utilisation de useRef pour stocker la référence de timeOut
 	const timeOut = useRef<NodeJS.Timeout | null>(null);
+	/////////////////////////////
+		const slideRight = useCallback(() => {
+			setCurrent((prevCurrent) =>
+				prevCurrent === images.length - 1 ? 0 : prevCurrent + 1
+			);
+		}, [images.length]);
+	// pour aller à l'image précédente
+const slideLeft = useCallback(() => {
+	setCurrent((prevCurrent) =>
+		prevCurrent === 0 ? images.length - 1 : prevCurrent - 1
+	);
+}, [images.length]);
+
+	/////////////////////////////
 
 	useEffect(() => {
 		if (autoPlay) {
@@ -116,15 +130,8 @@ const Caroussel: React.FC<CarousselProps> = ({ images }) => {
 				clearTimeout(timeOut.current);
 			}
 		};
-	}, [autoPlay, current, images.length]); 
+	}, [autoPlay, current, images.length, slideRight]); 
 
-	const slideRight = () => {
-		setCurrent(current === images.length - 1 ? 0 : current + 1);
-	};
-
-	const slideLeft = () => {
-		setCurrent(current === 0 ? images.length - 1 : current - 1);
-	};
 
 	return (
 		<div

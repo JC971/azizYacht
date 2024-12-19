@@ -88,9 +88,6 @@ header {
 	.desktop-navigation {
 		display: none; /* Masque la navigation de bureau */
 	}
-	.mobile-navigation {
-		display: flex; /* Affiche le menu hamburger */
-		align-items: center;
-		text-align: right;
-	}
+
+
 }

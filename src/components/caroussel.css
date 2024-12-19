@@ -99,9 +99,14 @@
     cursor: pointer;
 }
 
-
-
-
 .pagination_dot-active{
 	background-color: steelblue;
+}
+
+
+@media (max-width: 768px){
+	.caroussel-container{
+		height: 330px;
+	}
+	
 }

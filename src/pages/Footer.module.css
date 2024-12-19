@@ -17,7 +17,7 @@
 .footerLinks {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* Ajoute le wrap pour que les liens se répartissent sur plusieurs lignes */
+    flex-wrap: wrap; 
 }
 
 .footerLinks a {
@@ -26,7 +26,7 @@
 }
 
 .footerLinks a:hover {
-    color: #ccc; /* Change la couleur des liens au survol */
+    color: #ccc; 
 }
 
 .footerSocial {
