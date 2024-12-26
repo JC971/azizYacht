@@ -1,0 +1,42 @@
+/* src/CookiePopup.css */
+.cookie-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  height: 30px;
+}
+
+.cookie-popup-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+.cookie-popup p{
+  margin: 0;  
+  padding: 0;
+  font-size: 12px;
+}
+
+
+.cookie-popup button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.cookie-popup button:hover {
+  background-color: #45a049;
+}

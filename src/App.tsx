@@ -10,12 +10,15 @@ import Home from "./pages/Home";
 import "./components/caroussel.css";
 import NewBoats from "./pages/NewBoats";
 import UsedBoats from "./pages/usedBoats";
+import CookiePopup from "./components/cookiePopup.tsx";
+import "../styles/popup.css";
 
 function App() {
 	return (
 		<div>
 			<Header />
 
+			<CookiePopup />
 			<div>
 				<Routes>
 					<Route path="/" element={<Home />} />
