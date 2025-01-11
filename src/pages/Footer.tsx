@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
 				</div>
 
 				<div className={styles.footerCopyright}>
-					&copy; {new Date().getFullYear()} Your Company Name. All rights
+					&copy; {new Date().getFullYear()} MAZIZ. All rights
 					reserved.
 				</div>
 			</div>

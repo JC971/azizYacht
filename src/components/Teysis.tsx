@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./teysis.module.css";
-import imageMirage33 from '../images/Mirage-33.jpg';
-import imageOdyssey from '../images/odyssey-28.jpg';
-import imageMirage18 from '../images/mirage_18.jpg'
+import imageMirage33 from "../images/Mirage-33.jpg";
+import imageOdyssey from "../images/odyssey-28.jpg";
+import imageMirage18 from "../images/mirage_18.jpg";
 
 const Teysis: React.FC = () => {
 	const cards = [
@@ -27,15 +27,28 @@ const Teysis: React.FC = () => {
 	];
 
 	return (
-		<div className={styles.cardsContainer}>
-			{cards.map((card, index) => (
-				<div key={index} className={styles.card}>
-					<h2 className={styles.cardTitle}>{card.title}</h2>
-					<img src={card.image} alt={card.title} className={styles.cardImage} />
-					<p className={styles.cardDescription}>{card.description}</p>
-				</div>
-			))}
-		</div>
+		<>
+			<h2 className={styles.teysisTitle}>
+				Teysis boats available for purchase
+			</h2>
+			<div className={styles.cardsContainer}>
+				
+				{cards.map((card, index) => (
+					<div key={index} className={styles.card}>
+						<h2 className={styles.cardTitle}>{card.title}</h2>
+						<div className={styles.cardImageContainer}>
+							<img
+								src={card.image}
+								alt={card.title}
+								className={styles.cardImage}
+							/>
+						</div>
+						<p className={styles.cardDescription}>{card.description}</p>
+						<button className={styles.viewDetailsButton}>View Details</button>
+					</div>
+				))}
+			</div>
+		</>
 	);
 };
 

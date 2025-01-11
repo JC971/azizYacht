@@ -3,56 +3,62 @@
 	background-size: cover;
 	background-position: center;
 	width: 100%;
-	height: 800px;
+	height: 100vh;
 	display: flex;
-	align-items: center;
-	justify-content: center;
 	color: white;
 	text-align: center;
-	position: relative;
+
 	border-radius: 10px 10px 0 0;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 20px;
+	z-index:0;
+	transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+	
 }
+
 h1 {
-	font-size: 50px;
+	font-size: 3rem;
 	text-transform: uppercase;
 	text-align-last: left;
 	line-height: 1.4em;
-	margin: 0 0 0 50px;
+	margin: 50px;
 	letter-spacing: 12px;
 	text-align: left;
 }
 
 .heroContent {
-	position: absolute;
+	position: relative;
 	padding: 20px;
 	top: 70px;
 	left: 0px;
+	z-index: 2;
 }
 
 .heroNavigation {
 	margin: 50px;
+	z-index: 300;
 }
 
 .heroNavigation a {
-	margin: 0 10px;
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
 	display: flex;
 	justify-content: center;
-	font-size: 12px;
+	font-size: 1.2rem;
 	letter-spacing: 10px;
-	width: 320px;
+	width: 100%;
 	align-items: center;
-	height: fit-content;
-	margin-top: 10px;
+	cursor: pointer;
+	margin-top: 30px;
 	border-radius: 10px;
 	background-color: #ffff;
+	padding: 8px 0;
 	color: RGB(0, 98, 141);
-	height: 20px;
+	height: 30px;
+	cursor: pointer;
+
 }
 
 .heroNavigation a:hover {
@@ -60,18 +66,19 @@ h1 {
 }
 
 .rightArrow {
-	width: 28px;
+	width: 52px;
+	padding-left: 30px;
 }
 
-p {
+.heroText {
 	text-align-last: left;
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 	margin: 50px;
-	letter-spacing: 2px;
-}
-
-a .newModels {
-	margin: 30px;
+	letter-spacing: 5px;
+	font-weight: 600;
+	line-height: 1.5;
+	
+	
 }
 
 @media (max-width: 768px) {
@@ -89,6 +96,9 @@ a .newModels {
 }
 
 @media (max-width: 425px) {
+	.heroSection {
+		width: 425px;
+	}
 	.heroContent h1 {
 		font-size: 18px;
 	}
@@ -108,7 +118,7 @@ a .newModels {
 }
 
 @media (max-width: 375px) {
-	.heroSection{
+	.heroSection {
 		display: flex;
 		width: 375px;
 	}
@@ -118,10 +128,17 @@ a .newModels {
 		line-height: 1.4;
 		margin: 0;
 	}
-	.heroNavigation{
+	.heroNavigation {
 		margin-top: 30px;
 		margin-right: 0px;
 	}
+	p {
+		text-align: left;
+	}
 }
 
-
+main {
+	position: relative;
+	z-index: 2;
+	padding-top: 100vh;
+}

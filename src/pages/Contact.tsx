@@ -1,5 +1,6 @@
 import { useState, FormEvent } from "react";
 import ContentContact from "../components/ContentContact";
+import '../../styles/contentContact.css';
 
 const Contact = () => {
 	const [formData, setFormData] = useState({

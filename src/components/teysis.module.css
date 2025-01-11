@@ -5,15 +5,23 @@
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #ffff;
 }
-
+.teysisTitle{
+    text-align: center;
+	letter-spacing: 3px;
+	color: #004587;
+    background-color: #ffff;
+    padding-top: 30px;
+    margin-bottom: 0;
+}
 .card {
     width: 30%;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     text-align: center;
-    background-color: #fff;
+    background-color: #f8f8f8;
 }
 
 .cardTitle {
@@ -26,23 +34,89 @@
     height:300px;
     border-radius: 4px;
     object-fit: cover;
+    margin: 20px 20px;
+   
 }
 
+
 .cardDescription {
-    font-size: 14px;
-    margin-top: 10px;
-    text-align: left;
-    color: #555;
+	font-size: 14px;
+	
+	text-align: left;
+	color: #555;
+	height: 90px;
 }
+
+.cardImageContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewDetailsButton {
+    padding: 10px 20px;
+    background-color:RGB(86, 133, 160);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.viewDetailsButton:hover {
+    background-color: #0056b3;
+}
+
+
 
 @media(max-width: 768px){
     .cardsContainer{
         max-width: 768px;
-       
         flex-direction: column;
+        padding: 0;
     }
 .card{
-   width: 90%;
+   width: 100%;
    margin: 0 auto;
+   padding: 0;
 }
+}
+@media (max-width:425px) {
+    .cardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+.card{
+    margin-bottom: 10px;
+}
+.cardDescription{
+padding: 8px;
+}
+.teysisTitle{
+    text-align: center;
+	font-size: 16px;
+    letter-spacing: 3px;
+	color: #004587;
+}
+
+}
+
+@media (max-width:375px) {
+
+
+
+.teysisTitle{
+    text-align: center;
+	font-size:14px;
+    letter-spacing: 3px;
+	color: #004587;
+}
+
 }

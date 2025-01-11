@@ -3,7 +3,7 @@ import "./App.css";
 import "../src/header.css";
 import "../src/components/HamburgerMenu";
 import Footer from "./pages/Footer";
-import Header from "./components/Header";
+
 import Contact from "./pages/Contact";
 import NotFound from "./components/NotFound";
 import Home from "./pages/Home";
@@ -12,14 +12,16 @@ import NewBoats from "./pages/NewBoats";
 import UsedBoats from "./pages/usedBoats";
 import CookiePopup from "./components/cookiePopup.tsx";
 import "../styles/popup.css";
+import Header from "./components/Header.tsx";
 
 function App() {
 	return (
 		<div>
-			<Header />
+			
 
 			<CookiePopup />
 			<div>
+				<Header />
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/home" element={<Home />} />

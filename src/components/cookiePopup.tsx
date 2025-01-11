@@ -2,10 +2,16 @@
 import { useState } from "react";
 
 
+
 const CookiePopup = () => {
-	const [visible, setVisible] = useState(
-		!localStorage.getItem("cookiesAccepted")
-	);
+const [visible, setVisible] = useState(() => {
+	try {
+		return !localStorage.getItem("cookiesAccepted");
+	} catch (e) {
+		console.error("localStorage non accessible", e);
+		return true; 
+	}
+});
 
 	const acceptCookies = () => {
 		localStorage.setItem("cookiesAccepted", "true");

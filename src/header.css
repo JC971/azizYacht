@@ -1,8 +1,9 @@
 .nav{
-  
+  height: 90px;
     width: 100%;
     background-color: RGB(86, 133, 160);
-	
+	position: fixed;
+	z-index: 2000;
 }
 
 header {
