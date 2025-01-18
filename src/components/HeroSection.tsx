@@ -1,6 +1,5 @@
 import styles from "./HeroSection.module.css";
 import arrow from "../images/fleche-droite.png";
-
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -9,7 +8,7 @@ const HeroSection = () => {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			setScrollPosition((prev) => prev + (window.scrollY - prev) * 0.1);
+			setScrollPosition(window.scrollY);
 		};
 
 		window.addEventListener("scroll", handleScroll);
@@ -20,14 +19,13 @@ const HeroSection = () => {
 		<div
 			className={styles.heroSection}
 			style={{
-				position: "relative",
-				transform: `translateY(${scrollPosition * 0.5}px)`,
-				opacity: 1 - scrollPosition / 1000
+				opacity: Math.max(1 - scrollPosition / 300, 0),
+				pointerEvents: scrollPosition > 300 ? "none" : "auto",
 			}}
 		>
 			
 			<div className={styles.heroContent}>
-				<h1>
+				<h1 className={styles.heroTitle}>
 					French Riviera
 					<br /> To Tunisia
 				</h1>
@@ -36,7 +34,7 @@ const HeroSection = () => {
 						BOATS FOR SALE
 						<img src={arrow} alt="" className={styles.rightArrow} />
 					</Link>
-					<Link to="/contact" className={styles.usedModels}> 
+					<Link to="/contact" className={styles.usedModels}>
 						LIST YOUR BOAT
 						<img src={arrow} alt="" className={styles.rightArrow} />
 					</Link>

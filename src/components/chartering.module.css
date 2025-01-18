@@ -2,7 +2,7 @@
 	background-image: url("../images/chartering-1.jpeg");
 	background-size: cover;
 	background-position: center;
-	height: 800px;
+	height: 700px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -13,19 +13,20 @@
 	position: relative;
 	border-top: solid white 20px;
 	position: relative;
-	border-radius: 20px;
+	
 }
 
 .charteringContent {
 	position: absolute;
-	top: 140px;
-	right: 100px;
+	top: 160px;
+	left: 100px;
 }
 
 .charteringTitle {
 	font-size: 3rem;
 	color: #ffffff;
 	text-align-last: left;
+	
 }
 
 .charteringText {
@@ -48,3 +49,4 @@
   height: 2rem;
   padding-right: 20px;
 }
+

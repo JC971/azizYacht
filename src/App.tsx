@@ -17,11 +17,14 @@ import Header from "./components/Header.tsx";
 function App() {
 	return (
 		<div>
-			
-
+			{/* Popup pour les cookies */}
 			<CookiePopup />
-			<div>
-				<Header />
+
+			{/* Header reste fixe */}
+			<Header />
+
+			{/* Contenu principal avec espace pour le Header */}
+			<div className="main-content">
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/home" element={<Home />} />
@@ -36,10 +39,11 @@ function App() {
 					/>
 					<Route path="/new" element={<NewBoats />} />
 					<Route path="/contact" element={<Contact />} />
-					<Route path="*" element={<NotFound />} />{" "}
+					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</div>
 
+			{/* Footer */}
 			<Footer />
 		</div>
 	);

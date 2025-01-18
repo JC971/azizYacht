@@ -5,6 +5,7 @@ import Teysis from '../components/Teysis'
 import Caroussel from '../components/Caroussel';
 import { makays } from  "../components/Data"
 import Makay from '../components/makay';
+import UsedBoats from './usedBoats';
 
 
 
@@ -14,7 +15,7 @@ function Home() {
 			<HeroSection />
 		  <Teysis />
 		  <Makay />
-		  
+		  <UsedBoats />
 			<Caroussel images={makays} />
 			<Chartering />
 		</div>

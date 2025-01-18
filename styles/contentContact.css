@@ -1,13 +1,182 @@
-.contactUs{
-margin-bottom: 0;
+.formTitle {
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 30px;
+	font-size: 1.5rem;
+	color: #ffffff;
+	font-weight: 600;
 }
+
+.formulaire {
+	display: block;
+	height: 100vh;
+	border: solid gray 0.5px;
+	background-color: lightgray;
+}
+
+.form-contact {
+	height: 80vh;
+	margin: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: stretch;
+	background-color: grey;
+	width: 60%;
+	
+	border-radius: 8px;
+	padding-bottom: 30px;
+}
+
+#email,
+#message,
+#name {
+	font-size: 2rem;
+}
+.form-contact div {
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.form-contact label {
+	font-size: 1.2rem;
+	color: #ffffff;
+	font-weight: 600;
+	margin-bottom: 8px; /* Espacement avec l'input */
+	font-weight: bold;
+}
+.form-contact input[type="text"] {
+	width: 100%;
+	max-width: 600px; /* Limite la largeur */
+	padding: 10px; /* Espacement interne */
+	font-size: 16px;
+	color: #333;
+	border: 1px solid #ccc; /* Bordure grise */
+	border-radius: 5px; /* Coins arrondis */
+	outline: none; /* Supprime le contour par défaut */
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Légère ombre interne */
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+	border-radius: 8px;
+}
+
+.form-contact input[type="text"]:focus {
+	border-color: #007bff; /* Couleur bleue au focus */
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Lueur bleue */
+}
+
+.form-contact input[type="email"] {
+	width: 100%;
+	max-width: 600px; /* Limite la largeur */
+	padding: 10px; /* Espacement interne */
+	font-size: 16px;
+	color: #333;
+	border: 1px solid #ccc; /* Bordure grise */
+	border-radius: 5px; /* Coins arrondis */
+	outline: none; /* Supprime le contour par défaut */
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Légère ombre interne */
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+	border-radius: 8px;
+}
+.form-contact input[type="email"]:focus {
+	border-color: #007bff;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-contact input[type="message"]:focus {
+	border-color: #007bff;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-contact textarea {
+	width: 100%;
+	max-width: 500px;
+	height: 150px; /* Hauteur par défaut */
+	padding: 10px; /* Espacement interne */
+	font-size: 16px;
+	color: #333;
+	border: 1px solid #ccc; /* Bordure grise */
+	border-radius: 5px; /* Coins arrondis */
+	outline: none; /* Supprime le contour par défaut */
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Légère ombre interne */
+	resize: vertical; /* Permet de redimensionner uniquement verticalement */
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+	border-radius: 8px;
+}
+.form-contact textarea:focus {
+	border-color: #007bff; /* Couleur bleue au focus */
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Lueur bleue */
+}
+
+.form-contact .error-message {
+	color: red;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
 .content-contact {
 	background-color: RGB(178, 178, 178);
-	margin-top: 60px;
-	padding-top: 30px;
+	margin-top: 00px;
+	padding-top: 10px;
 	text-transform: uppercase;
 	color: white;
 	text-align: center;
 	margin-bottom: 0;
-	
+}
+
+/* Style de base pour le bouton */
+.form-contact button {
+	background-color: RGB(86, 133, 160);
+	color: #fff; /* Texte blanc */
+	font-size: 1.2rem; /* Taille du texte */
+	font-weight: bold; /* Texte en gras */
+	padding: 10px 20px; /* Espacement interne */
+	border: none; /* Supprime la bordure */
+	border-radius: 5px; /* Coins arrondis */
+	cursor: pointer; /* Curseur pointeur au survol */
+	transition: background-color 0.3s ease, transform 0.2s ease; /* Transition fluide */
+}
+
+/* Style au survol (hover) */
+.form-contact button:hover {
+	background-color: #0056b3; /* Bleu plus foncé */
+	transform: scale(1.05); /* Légère mise en avant */
+}
+
+/* Style lors du clic (active) */
+.form-contact button:active {
+	background-color: #004085; /* Bleu encore plus foncé */
+	transform: scale(0.95); /* Légère réduction */
+}
+
+/* Désactiver le bouton (si applicable) */
+.form-contact button:disabled {
+	background-color: #cccccc; /* Gris clair */
+	color: #666666; /* Gris foncé */
+	cursor: not-allowed; /* Indique un état désactivé */
+	transform: none; /* Pas d'animation */
+}
+
+@media (max-width: 1440px) {
+	.form-contact {
+		width: 80vh;
+	}
+}
+@media (max-width:425px){
+	.form-contact{
+		max-width: 425px;
+	}
+	#name,
+	#email,
+	#message
+	{
+		width: 80%;
+		margin: auto;
+	}
+	.formulaire{
+		background-color: grey;
+	}
 }

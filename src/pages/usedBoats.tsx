@@ -1,5 +1,6 @@
 import React from "react";
-import Styles from "./newBoats.module.css";
+//import Styles from "./newBoats.module.css";
+import Styles from "./usedBoats.module.css"
 
 const UsedBoats: React.FC = () => {
 	const newCards = [
@@ -37,15 +38,18 @@ const UsedBoats: React.FC = () => {
 		}
 	];
 	return (
-		<div className={Styles.newCardsContainer}>
-			{newCards.map((newCard, index) => (
-				<div key={index} className={Styles.newCard}>
-					<h3 className={Styles.newCardTitle}>{newCard.title}</h3>
-					<img src={newCard.image} className={Styles.newCardImage} />
-					<p className={Styles.newCardDescription}>{newCard.description}</p>
-				</div>
-			))}
-		</div>
+		<>
+			<h2 className={Styles.newCardsTitle}>used boats available for purchase</h2>
+			<div className={Styles.newCardsContainer}>
+				{newCards.map((newCard, index) => (
+					<div key={index} className={Styles.newCard}>
+						<h3 className={Styles.newCardTitle}>{newCard.title}</h3>
+						<img src={newCard.image} className={Styles.newCardImage} />
+						<p className={Styles.newCardDescription}>{newCard.description}</p>
+					</div>
+				))}
+			</div>
+		</>
 	);
 };
 

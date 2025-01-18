@@ -1,9 +1,11 @@
-.nav{
-  height: 90px;
-    width: 100%;
-    background-color: RGB(86, 133, 160);
+.nav {
+	height: 90px;
+	width: 100%;
+	background-color: RGB(86, 133, 160);
 	position: fixed;
+	top: 0;
 	z-index: 2000;
+	max-width: 1920px;
 }
 
 header {
@@ -14,12 +16,12 @@ header {
 	align-items: center;
 	align-content: stretch;
 	padding: 0;
-	position: absolute;
 	left: 0px;
 	top: 0px;
-	margin-right: auto;
-	margin-left: auto;
-	
+	height: 90px;
+}
+.main-content {
+	padding-top: 80px; /* La même hauteur que le header */
 }
 .logo {
 	width: 200px;
@@ -33,11 +35,10 @@ header {
 	letter-spacing: 8px;
 }
 
-.contact{
-    border: solid white 2px;
-    padding: 5px;
-    border-radius: 20px;
-   
+.contact {
+	border: solid white 2px;
+	padding: 5px;
+	border-radius: 20px;
 }
 
 .logo img {
@@ -83,12 +84,25 @@ header {
 .mobile-navigation {
 	display: none;
 }
+@media (max-width: 1024px){
+	.navigation a{
+		font-size: 12px;
+	}
+}
 
 /* Styles pour petits écrans */
 @media (max-width: 768px) {
 	.desktop-navigation {
 		display: none; /* Masque la navigation de bureau */
 	}
-
-
+}
+@media (max-width: 425px) {
+	.nav {
+		max-width: 425px;
+	}
+}
+@media (max-width: 375px) {
+	.nav {
+		max-width: 375px;
+	}
 }

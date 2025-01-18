@@ -1,5 +1,5 @@
 import { useState, FormEvent } from "react";
-import ContentContact from "../components/ContentContact";
+
 import '../../styles/contentContact.css';
 
 const Contact = () => {
@@ -59,8 +59,9 @@ const Contact = () => {
 
 	return (
 		<>
-			<ContentContact />
+		
 			<div className="formulaire">
+				<h2 className="formTitle">Contact Us</h2>
 				<form onSubmit={handleSubmit} className="form-contact">
 					<div>
 						<label htmlFor="name">Name:</label>
