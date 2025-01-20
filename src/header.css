@@ -84,6 +84,9 @@ header {
 .mobile-navigation {
 	display: none;
 }
+
+
+
 @media (max-width: 1024px){
 	.navigation a{
 		font-size: 12px;

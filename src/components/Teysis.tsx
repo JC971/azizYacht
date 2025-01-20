@@ -3,6 +3,7 @@ import styles from "./teysis.module.css";
 import imageMirage33 from "../images/Mirage-33.jpg";
 import imageOdyssey from "../images/odyssey-28.jpg";
 import imageMirage18 from "../images/mirage_18.jpg";
+import logoTeysis from "../images/logo.png";
 
 const Teysis: React.FC = () => {
 	const cards = [
@@ -28,11 +29,11 @@ const Teysis: React.FC = () => {
 
 	return (
 		<>
-			<h2 className={styles.teysisTitle}>
-				Teysis boats available for purchase
-			</h2>
+			<h2 className={styles.teysisTitle}>Boats available for purchase</h2>
+			<span className={styles.logTeysis}>
+				<img src={logoTeysis} alt="Teysis logo" className={styles.logoImage} />
+			</span>
 			<div className={styles.cardsContainer}>
-				
 				{cards.map((card, index) => (
 					<div key={index} className={styles.card}>
 						<h2 className={styles.cardTitle}>{card.title}</h2>

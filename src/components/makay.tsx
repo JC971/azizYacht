@@ -31,10 +31,10 @@ const Makay: React.FC = () => {
 		<div>
 			<div className={styles.makayWrapper}>
 				<h2 className={styles.makayText}>Makay boats available for purchase</h2>
-				<header className={styles.makayHeader}>
+				<div className={styles.makayHeader}>
 					<img src={logoMakay} alt="Makay Logo" className={styles.makayLogo} />
 					<h1 className={styles.makayTitle}></h1>
-				</header>
+				</div>
 
 				<div className={styles.makayContainer}>
 					{makayCards.map((makayCard, index) => (
