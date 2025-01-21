@@ -42,12 +42,29 @@
 .projectContainer a {
 	color: #ffffff;
 	font-size: 2rem;
+	display: none;
 }
 
 .arrowIcon{
   width: 2rem;
   height: 2rem;
   padding-right: 20px;
+}
+
+@media(max-width: 425px){
+	.charteringContent {
+	position: absolute;
+	top: 200px;
+	left:100px;
+}
+.charteringTitle{
+	font-size: 2rem;
+}
+.charteringText {
+	font-size: 1.2rem;
+	text-align-last: left;
+	display: none;
+}
 }
 
 @media (max-width: 375px){

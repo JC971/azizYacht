@@ -128,9 +128,11 @@
 	}
 	.cardImage {
 		object-fit: contain;
+		margin: 0;
 	}
 	.cardDescription {
 		padding: 8px;
+		margin-top: 0;
 	}
 	.teysisTitle {
 		text-align: center;

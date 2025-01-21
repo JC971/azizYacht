@@ -26,7 +26,6 @@
 	align-content: stretch;
 	background-color: grey;
 	width: 60%;
-	
 	border-radius: 8px;
 	padding-bottom: 30px;
 }
@@ -42,12 +41,16 @@
 	flex-direction: column;
 	align-items: flex-start;
 }
+.contactDiv {
+	border: solid rgb(94, 42, 192) 3px;
+}
 .form-contact label {
 	font-size: 1.2rem;
 	color: #ffffff;
 	font-weight: 600;
 	margin-bottom: 8px; /* Espacement avec l'input */
 	font-weight: bold;
+	
 }
 .form-contact input[type="text"] {
 	width: 100%;
@@ -55,6 +58,8 @@
 	padding: 10px; /* Espacement interne */
 	font-size: 16px;
 	color: #333;
+	
+
 	border: 1px solid #ccc; /* Bordure grise */
 	border-radius: 5px; /* Coins arrondis */
 	outline: none; /* Supprime le contour par défaut */
@@ -111,6 +116,7 @@
 	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Lueur bleue */
 }
 
+
 .form-contact .error-message {
 	color: red;
 	font-size: 12px;
@@ -159,24 +165,75 @@
 	cursor: not-allowed; /* Indique un état désactivé */
 	transform: none; /* Pas d'animation */
 }
-
+ 
 @media (max-width: 1440px) {
 	.form-contact {
 		width: 80vh;
+		
+	}
+	.nameDiv {
+		margin: 0;
+	}
+	#name {
+		width: 100%;
+		padding: 0;
+	}
+	.emailDiv {
+		margin-bottom: 0;
+	}
+	#email {
+		padding: 0;
+		margin: 0px;
+	}
+	
+	#message{
+		padding: 0;
 	}
 }
-@media (max-width:425px){
-	.form-contact{
+
+@media (max-width: 425px) {
+	.form-contact {
 		max-width: 425px;
+		
 	}
+	.form-contact div {
+	
+		max-width: 350px;
+		width: 300px;
+		
+	}
+
 	#name,
 	#email,
-	#message
-	{
+	#message {
 		width: 80%;
 		margin: auto;
 	}
-	.formulaire{
+	.formulaire {
 		background-color: grey;
+	}
+}
+@media (max-width: 375px) {
+	.formulaire {
+		max-width: 375px;
+	}
+	.form-contact {
+		width: 355px;
+		padding-bottom: 0;
+	}
+	.form-contact label {
+		margin-left: 30px;
+	}
+}
+
+@media (max-width: 320px){
+	.formTitle{
+		margin: 0;
+	}
+	.formulaire{
+		max-width: 320px;
+	}
+	.form-contact{
+		max-width: 320px;
 	}
 }

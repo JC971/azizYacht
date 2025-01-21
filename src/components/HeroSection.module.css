@@ -27,7 +27,7 @@ h1 {
 .heroContent {
 	position: relative;
 	padding: 20px;
-	top: 70px;
+	top: 0px;
 	left: 0px;
 	z-index: 2;
 }
@@ -130,12 +130,14 @@ h1 {
 	.heroSection {
 		width: 425px;
 	}
+h1{
+	padding: 12px;
+	margin:	0;
+}
 	.heroContent{
 		max-width: 425px;
 	}
-	.heroContent h1 {
-		font-size: 18px;
-	}
+	
 	.heroText{
 	margin: 0 8px;
 	}
@@ -148,7 +150,7 @@ h1 {
 	}
 	p {
 		text-align-last: left;
-		font-size: 1.1rem;
+		font-size: 1rem;
 		margin: 0px;
 		letter-spacing: 0;
 	}
@@ -159,35 +161,31 @@ h1 {
 		display: flex;
 		width: 375px;
 	}
-
-	.heroContent h1 {
-		font-size: 14px;
-		line-height: 3;
-		margin: 20px;
-	}
+.heroContent h1{
+	font-size: 1rem;
+	letter-spacing: 8px;
+}
+	
 	.heroNavigation {
 		margin-top: 30px;
 		margin-right: 0px;
 	}
-	p {
-		text-align: left;
-	}
+	
 	.heroContent{
 		margin: 0;
 		padding: 0;
 		max-width: 375px;
 	}
 	.heroText{
-		min-width: 375px;
 		margin-left: 0;
 		margin-right: 0;
-		padding-left:0 ;
+		padding-left:12px ;
 		padding-right: 0;
+		font-size: 14px;
+		font-size: 14px;
 	}
 
-	p{
-		display: none;
-	}
+	
 }
 @media (max-width:320px){
 	.heroSection{

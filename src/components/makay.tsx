@@ -25,6 +25,7 @@ const Makay: React.FC = () => {
 			description:
 				"The incredibly spacious cockpit area is among the largest in its class, setting a new standard for this model and boat size",
 		},
+		
 	];
 
 	return (

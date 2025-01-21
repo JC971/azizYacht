@@ -5,9 +5,6 @@
 	margin-left: auto;
 	margin-right: auto;
 	flex-wrap: wrap;
-	
-	
-	
 }
 
 
@@ -19,20 +16,20 @@
 	text-align: center;
 	background-color: #fff;
 	margin-bottom: 50px;
+	
 }
 
+
 .newCardsTitle {
-   text-align: center;
+	text-align: center;
 	letter-spacing: 5px;
 	color: #004587;
-    background-color: #ffff;
-    padding: 40px 0;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    font-size: 2rem;
+	background-color: #ffff;
+	padding: 40px 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-size: 2rem;
 	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-	
-
 }
 
 
@@ -44,46 +41,42 @@
 	
 }
 
-.newCardDescription {
+.usedCardDescription {
 	font-size: 14px;
 	margin-top: 10px;
 	text-align: left;
 	color: #555;
+	padding: 20px;
+	
 }
 
 @media (max-width:768px){
-.newCardsContainer{
-	flex-direction: column;
+	.newCardsContainer{
+		flex-direction: column;
 		max-width: 768px;
 		padding: 0;
-}
-.newCard{
-	width: 100%;
+	}
+	.newCard{
+		width: 100%;
 		padding: 0;
 		margin-bottom: 20px;
-}
-.newCardsTitle{
-	text-transform: uppercase;
+	}
+	.newCardsTitle{
+		text-transform: uppercase;
 		font-size: 2rem;
 		letter-spacing: 2px;
 		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+	}
 }
 @media (max-width: 425px){
-.newCardsTitle{
-	 text-align: center;
-	font-size: 16px;
-    letter-spacing: 3px;
-	color: #004587;
+	.newCardsTitle{
+		text-align: center;
+		font-size: 16px;
+		letter-spacing: 3px;
+		color: #004587;
+	}
+	
 }
-}
-@media (max-width: 375){
-.newCardsTitle{
-	 text-align: center;
-	font-size: 14px;
-    letter-spacing: 3px;
-	color: #004587;
-}
-}
+
 
 

@@ -20,8 +20,9 @@
 .newCardTitle {
 	font-size: 18px;
 	margin-bottom: 10px;
-
 	height: 60px;
+	line-height: 60px;
+	text-align: center;
 }
 
 .newCardImage {
@@ -39,17 +40,14 @@
 }
 
 @media (max-width: 768px) {
-
-.newCardsContainer{
-	 background-color: RGB(86, 133, 160);
-}
-
-.newCard{
-	width: 45%;
-	margin-bottom: 5px;
-	
-}
-
+	.newCardsContainer {
+		background-color: RGB(86, 133, 160);
+		margin-top: 0;
+	}
+	.newCard {
+		width: 45%;
+		margin-bottom: 5px;
+	}
 }
 
 @media (max-width: 425px) {
@@ -62,12 +60,21 @@
 		margin: 0;
 	}
 	.newCard {
-		width: 90%;
+		width: 100%;
 		margin: 0; /* Supprime tout espacement inutile */
 		padding: 0;
 		margin-bottom: 20px;
-		
-
+	}
+	.newCardTitle {
+		margin: 0;
+	}
+	.newCard img {
+		height: 280px;
+		object-fit: contain;
+	}
+	.newCardDescription {
+		margin: 0 15px 20px 20px;
 	}
 }
+
 

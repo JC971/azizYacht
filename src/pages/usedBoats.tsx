@@ -24,17 +24,17 @@ const UsedBoats: React.FC = () => {
 		{
 			title: "Forward Cabin",
 			image: "/images/grand-turismo-6.jpg",
-			Description: "",
+			Description: "dfgsdfg",
 		},
 		{
 			title: "Owner's Cabin",
 			image: "/images/grand-turismo-6-1.jpg",
-			Description: "",
+			Description: "dfgs dfgssdfg",
 		},
 		{
 			title: "Portside Cabin",
 			image: "/images/grand-turismo-6-2.jpg",
-			description:"",
+			description:"dfgsdsfg",
 		}
 	];
 	return (
@@ -45,7 +45,7 @@ const UsedBoats: React.FC = () => {
 					<div key={index} className={Styles.newCard}>
 						<h3 className={Styles.newCardTitle}>{newCard.title}</h3>
 						<img src={newCard.image} className={Styles.newCardImage} />
-						<p className={Styles.newCardDescription}>{newCard.description}</p>
+						<p className={Styles.usedCardDescription}>{newCard.description}</p>
 					</div>
 				))}
 			</div>

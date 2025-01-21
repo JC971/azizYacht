@@ -17,10 +17,10 @@ import Header from "./components/Header.tsx";
 function App() {
 	return (
 		<div>
-			{/* Popup pour les cookies */}
+			
 			<CookiePopup />
 
-			{/* Header reste fixe */}
+		
 			<Header />
 
 			{/* Contenu principal avec espace pour le Header */}
