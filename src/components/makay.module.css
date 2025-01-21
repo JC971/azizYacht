@@ -5,16 +5,16 @@
 }
 
 .makayText {
-    text-align: center;
+	text-align: center;
 	letter-spacing: 5px;
 	color: #004587;
-    background-color: #ffff;
-    padding: 30px 0;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    font-size: 3rem;
-	 text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-	 display: none;
+	background-color: #ffff;
+	padding: 30px 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-size: 3rem;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+	display: none;
 }
 
 .makayContainer {
@@ -25,15 +25,14 @@
 	margin-right: auto;
 	background-color: #ffff;
 	margin-bottom: 40px;
-
 }
-.makayHeader{
+.makayHeader {
 	display: flex;
 	justify-content: center;
-	padding: 20px 0 0 ;
+	padding: 20px 0 0;
 }
 
-.makayHeader img{
+.makayHeader img {
 	width: 220px;
 	object-fit: contain;
 }
@@ -95,7 +94,7 @@
 		max-width: 768px;
 		padding: 0;
 	}
-	.makayHeader img{
+	.makayHeader img {
 		width: 150px;
 	}
 	.makayCard {
@@ -106,38 +105,32 @@
 	.cardDescription {
 		padding: 12px;
 		margin: 10px;
-		
-
 	}
-	.viewDetailsButton{
+	.viewDetailsButton {
 		margin-bottom: 20px;
 	}
 }
 @media (max-width: 425px) {
-	.makayText {
-		font-size: 18px;
-	}
+
 	h2 {
 		font-size: 18px;
 	}
-	.makayImage{
+	.makayImage {
 		object-fit: contain;
 	}
 }
 @media (max-width: 425px) {
-	.makayText {
-		font-size: 14px;
-	}
 	h2 {
 		font-size: 18px;
+		color: #213547;
 	}
-	.makayImage{
+	.makayImage {
 		object-fit: contain;
 	}
-	.makayImage{
+	.makayImage {
 		height: 300px;
 	}
-	.cardDescription{
+	.cardDescription {
 		display: block;
 		font-size: 14px;
 	}

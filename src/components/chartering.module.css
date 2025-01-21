@@ -50,3 +50,9 @@
   padding-right: 20px;
 }
 
+@media (max-width: 375px){
+.charteringContainer{
+	border: 0;
+}
+}
+

@@ -26,9 +26,7 @@ const [visible, setVisible] = useState(() => {
 		<div className="cookie-popup">
 			<div className="cookie-popup-content">
 				<p>
-					Nous utilisons des cookies pour améliorer votre expérience. En
-					continuant à utiliser notre site, vous acceptez notre utilisation des
-					cookies.
+					We use cookies to enhance your experience. By continuing to use our site, you agree to our use of cookies.
 				</p>
 				<button onClick={acceptCookies}>Accepter</button>
 			</div>

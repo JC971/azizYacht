@@ -1,5 +1,5 @@
 .heroSection {
-	background-image: url("../images/catamaran-au-large.jpeg");
+	background-image: url("../images/imageMazizHome.jpg");
 	background-size: cover;
 	background-position: center;
 	width: 100%;
@@ -187,6 +187,14 @@ h1 {
 
 	p{
 		display: none;
+	}
+}
+@media (max-width:320px){
+	.heroSection{
+		width: 320px;
+	}
+	.heroContent{
+		width: 320px;
 	}
 }
 

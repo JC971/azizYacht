@@ -109,3 +109,8 @@ header {
 		max-width: 375px;
 	}
 }
+@media (max-width:320px){
+	.nav{
+		max-width: 320px;
+	}
+}
