@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import catamaran from "../../src/images/logo.png";
+import logHome from "../../src/images/logo.png";
 import HamburgerMenu from "./HamburgerMenu"; // Importez le menu hamburger
 import { navigationLinks } from "../../navigationLinks"; // Importez les liens réutilisables
 
@@ -10,8 +10,9 @@ const Header: React.FC = () => {
 		<div>
 			<header className="nav">
 				<div className="logo">
-					<img src={catamaran} alt="Logo" />
-					
+					<Link to="/">
+						<img src={logHome} alt="Logo" />
+					</Link>
 				</div>
 				<div className="desktop-navigation">
 					<nav className="navigation">
