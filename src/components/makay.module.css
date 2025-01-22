@@ -78,6 +78,17 @@
 	color: white;
 	font-weight: 600;
 }
+@media(max-width:1024px){
+	.makayContainer{
+		max-width: 1024px;
+		flex-wrap: wrap;
+	}
+	.makayCard{
+		width: 85%;
+		margin-bottom: 20px;
+	}
+
+}
 
 @media (max-width: 1440px) {
 	.makayText {

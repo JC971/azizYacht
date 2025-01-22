@@ -2,13 +2,15 @@
 	height: 90px;
 	width: 100%;
 	background-color: RGB(86, 133, 160);
-	position: fixed;
+
 	top: 0;
+
 	z-index: 2000;
 	max-width: 1920px;
 }
 
 header {
+	position:fixed;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -87,11 +89,12 @@ header {
 
 
 
-@media (max-width: 1024px){
-	.navigation a{
-		font-size: 12px;
+@media(max-width: 1024px){
+	.nav{
+		max-width: 1024px;
 	}
 }
+	
 
 /* Styles pour petits écrans */
 @media (max-width: 768px) {
@@ -101,7 +104,7 @@ header {
 	.nav{
 		width: 768px;
 	}
-	
+
 }
 @media (max-width: 425px) {
 	.nav {

@@ -6,6 +6,7 @@
 	margin-right: auto;
 	flex-wrap: wrap;
 	margin-top: 80px;
+	
 }
 
 .newCard {
@@ -14,16 +15,20 @@
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	border-radius: 8px;
 	text-align: center;
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.8);
 	margin-bottom: 20px;
 }
 
 .newCardTitle {
-	font-size: 18px;
-	margin-bottom: 10px;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
+	margin-bottom: 15px;
 	height: 60px;
 	line-height: 60px;
 	text-align: center;
+	color: #003366; 
 }
 
 .newCardImage {
@@ -39,6 +44,26 @@
 	text-align: left;
 	color: #555;
 }
+
+@media(max-width:1440px){
+	.newCardsContainer{
+		padding-left: 0;
+	}
+.newCardImage{
+	object-fit: cover;
+	height: 300px;
+}
+.newCardDescription{
+	margin-right: 0px;
+	max-width: 1440px;
+}
+	}
+@media(max-width: 1024px){
+	.newCardsContainer{
+		padding-right: 0;
+	}
+}
+
 
 @media (max-width: 768px) {
 	.newCardsContainer {

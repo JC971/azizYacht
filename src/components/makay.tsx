@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import makayAnchored from "../images/makay-anchored.jpeg";
 import makayBabord from "../images/makay-babord.jpeg";
 import makayCockpitRs from "../images/makay-cockpit-rs.jpeg";
@@ -11,21 +12,20 @@ const Makay: React.FC = () => {
 			title: "Makay",
 			image: makayAnchored,
 			description:
-				"The MAKAI M37 is designed to seamlessly blend luxury and performance, setting a new standard for powercats. Drawing inspiration from the timeless elegance and high performance of sports cars.",
+				"The MAKAI M37 seamlessly combines luxury and performance, redefining powercat standards. Inspired by the timeless elegance of sports cars, it delivers unmatched comfort and exceptional design.",
 		},
 		{
-			title: "Port-side cabin",
+			title: "Port-side Cabin",
 			image: makayBabord,
 			description:
-				"The M37 motor catamaran is configured with two cabins: a master cabin and a guest cabin.",
+				"The M37 motor catamaran features two well-appointed cabins: a spacious master cabin and a comfortable guest cabin. Both are designed for relaxation and privacy during your journeys.",
 		},
 		{
 			title: "Makay Cockpit",
 			image: makayCockpitRs,
 			description:
-				"The incredibly spacious cockpit area is among the largest in its class, setting a new standard for this model and boat size",
+				"The Makay M37 boasts an exceptionally spacious cockpit, one of the largest in its class. Designed for socializing and relaxation, it sets a new benchmark for boats of its size.",
 		},
-		
 	];
 
 	return (
@@ -33,7 +33,13 @@ const Makay: React.FC = () => {
 			<div className={styles.makayWrapper}>
 				<h2 className={styles.makayText}>Makay boats available for purchase</h2>
 				<div className={styles.makayHeader}>
-					<img src={logoMakay} alt="Makay Logo" className={styles.makayLogo} />
+					<Link to="/new">
+						<img
+							src={logoMakay}
+							alt="Makay Logo"
+							className={styles.makayLogo}
+						/>
+					</Link>
 					<h1 className={styles.makayTitle}></h1>
 				</div>
 

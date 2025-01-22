@@ -54,12 +54,14 @@ h1 {
 	padding: 8px 0;
 	color: RGB(0, 98, 141);
 	height: 30px;
-	cursor: pointer;
 	color: RGB(1, 17, 44);
+	transition: all 0.3s ease;
 }
 
 .heroNavigation a:hover {
-	text-decoration: underline;
+	color: rgb(86, 133, 160);
+	font-size: 12px;
+	font-weight: 800;
 }
 
 .rightArrow {
@@ -133,9 +135,11 @@ h1 {
 h1{
 	padding: 12px;
 	margin:	0;
+
 }
 	.heroContent{
 		max-width: 425px;
+		top: 50px;
 	}
 	
 	.heroText{

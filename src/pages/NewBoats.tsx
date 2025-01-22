@@ -16,53 +16,55 @@ const NewBoats: React.FC = () => {
 			title: "Mirage 33",
 			image: imageMirage33,
 			description:
-				"The MIRAGE 33 is the boat for relaxation and leisure at sea in complete simplicity.",
+				"The Mirage 33 is the perfect boat for relaxation and leisure at sea. Combining simplicity and comfort, it offers an effortless way to enjoy peaceful moments on the water.",
 		},
 		{
-			title: "MIRAGE",
+			title: "Mirage",
 			image: mirageAtSea,
-			Description: "Ready for a sea outing",
+			description:
+				"The Mirage is ready for your next sea outing, offering reliable performance and a sleek design for smooth sailing and enjoyable adventures.",
 		},
-
 		{
 			title: "Mirage 18",
 			image: imageMirage18,
 			description:
-				"Ideal for families, allowing them to enjoy pleasant days and nights of nautical camping in complete autonomy.",
+				"The Mirage 18 is ideal for families, offering space for pleasant days and nights of nautical camping. Its thoughtful design ensures comfort, autonomy, and unforgettable moments on the water.",
 		},
 		{
 			title: "Odyssey 25",
 			image: odyssey25,
-			Description: "",
+			description:
+				"The Odyssey 25 offers a compact yet versatile design, perfect for coastal cruising. With stylish lines and modern functionality, it provides an exceptional experience at sea.",
 		},
 		{
-			title: "ODYSSEY",
+			title: "Odyssey",
 			image: odysseyAtSea,
-			Description: "",
+			description:
+				"The Odyssey is built for adventure, featuring a robust design and excellent handling. Whether for short trips or extended journeys, it delivers performance and reliability.",
 		},
 		{
 			title: "Odyssey 28",
 			image: imageOdyssey,
 			description:
-				"Designed by STAMA Design, the ODYSSEY 28 stands out for its sleek appearance and elegant finishes.",
+				"Designed by STAMA Design, the Odyssey 28 combines sleek styling with elegant finishes. It is the perfect blend of performance and refinement for a premium boating experience.",
 		},
 		{
 			title: "Makay",
 			image: makayAnchored,
 			description:
-				"The MAKAI M37 is designed to seamlessly blend luxury and performance, setting a new standard for powercats. Drawing inspiration from the timeless elegance and high performance of sports cars.",
+				"The Makai M37 redefines luxury and performance for powercats. With inspiration from the elegance of sports cars, it offers unmatched comfort and an innovative design.",
 		},
 		{
-			title: "Port-side cabin",
+			title: "Port-side Cabin",
 			image: makayBabord,
 			description:
-				"The M37 motor catamaran is configured with two cabins: a master cabin and a guest cabin.",
+				"The M37 motor catamaran features two cabins: a spacious master cabin and a well-appointed guest cabin. Both provide the perfect balance of privacy and comfort.",
 		},
 		{
 			title: "Makay Cockpit",
 			image: makayCockpitRs,
 			description:
-				"The incredibly spacious cockpit area is among the largest in its class, setting a new standard for this model and boat size",
+				"The Makai M37 boasts one of the largest cockpits in its class. Designed for relaxation and socializing, it sets a new benchmark for comfort and style in this category.",
 		},
 	];
 	return (

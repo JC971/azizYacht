@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./teysis.module.css";
 import imageMirage33 from "../images/Mirage-33.jpg";
 import imageOdyssey from "../images/odyssey-28.jpg";
@@ -11,19 +12,19 @@ const Teysis: React.FC = () => {
 			title: "Mirage 33",
 			image: imageMirage33,
 			description:
-				"The MIRAGE 33 is the boat for relaxation and leisure at sea in complete simplicity.",
+				"The Mirage 33 is perfect for relaxation and leisure at sea. Combining simplicity and functionality, it offers a comfortable layout for those seeking serene and enjoyable boating experiences.",
 		},
 		{
 			title: "Odyssey 28",
 			image: imageOdyssey,
 			description:
-				"Designed by STAMA Design, the ODYSSEY 28 stands out for its sleek appearance and elegant finishes.",
+				"Designed by STAMA Design, the Odyssey 28 stands out with its sleek profile and refined finishes. It offers an elegant design paired with outstanding performance, making it ideal for both style and functionality.",
 		},
 		{
 			title: "Mirage 18",
 			image: imageMirage18,
 			description:
-				"Ideal for families, allowing them to enjoy pleasant days and nights of nautical camping in complete autonomy.",
+				"The Mirage 18 is ideal for families, offering space for pleasant days and nights of nautical camping. Its thoughtful design ensures comfort, autonomy, and unforgettable moments on the water.",
 		},
 	];
 
@@ -31,7 +32,13 @@ const Teysis: React.FC = () => {
 		<>
 			<h2 className={styles.teysisTitle}>Boats available for purchase</h2>
 			<span className={styles.logTeysis}>
-				<img src={logoTeysis} alt="Teysis logo" className={styles.logoImage} />
+				<Link to="/new">
+					<img
+						src={logoTeysis}
+						alt="Teysis logo"
+						className={styles.logoImage}
+					/>
+				</Link>
 			</span>
 			<div className={styles.cardsContainer}>
 				{cards.map((card, index) => (
