@@ -45,9 +45,14 @@
 	background-color: #f8f8f8;
 	width: 30%;
 }
-.CardTitle {
-	font-size: 18px;
+.cardTitle {
+	font-size: 1.5rem;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #004587;
 	margin-bottom: 10px;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+	
 }
 
 .makayImage {

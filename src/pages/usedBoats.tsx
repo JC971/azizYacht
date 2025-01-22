@@ -48,7 +48,7 @@ const UsedBoats: React.FC = () => {
 			<div className={Styles.newCardsContainer}>
 				{newCards.map((newCard, index) => (
 					<div key={index} className={Styles.newCard}>
-						<h3 className={Styles.newCardTitle}>{newCard.title}</h3>
+						<h3 className={Styles.usedCardTitle}>{newCard.title}</h3>
 						<img src={newCard.image} className={Styles.newCardImage} />
 						<p className={Styles.usedCardDescription}>{newCard.description}</p>
 					</div>

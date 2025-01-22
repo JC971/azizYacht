@@ -74,6 +74,10 @@
 		width: 45%;
 		margin-bottom: 5px;
 	}
+	.newCard img {
+		height: 200px;
+		object-fit: contain;
+	}
 }
 
 @media (max-width: 425px) {
