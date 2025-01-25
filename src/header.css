@@ -2,11 +2,8 @@
 	height: 90px;
 	width: 100%;
 	background-color: RGB(86, 133, 160);
-
 	top: 0;
-
 	z-index: 2000;
-	max-width: 1920px;
 }
 
 header {
@@ -28,7 +25,7 @@ header {
 .logo {
 	width: 200px;
 }
-
+/*menu classique */
 .navigation a {
 	color: #ffffff;
 	margin: 20px;
@@ -52,10 +49,21 @@ header {
 	opacity: 1;
 	height: 20px;
 }
-
+/*
 .menu-toggle {
 	display: block;
 	margin-right: 50px;
+	color: #ffffff;
+}*/
+/* Styles du menu hamburger */
+.hamburger-menu .menu-toggle {
+	font-size: 18px;
+	cursor: pointer;
+	background: none;
+	border: none;
+	display: block;
+	z-index: 1001;
+	margin-right: 15px;
 	color: #ffffff;
 }
 
@@ -104,8 +112,15 @@ header {
 	.nav{
 		width: 768px;
 	}
-
+	
 }
+
+@media(max-width: 430px){
+	.nav{
+		max-width: 430px;
+	}
+}
+
 @media (max-width: 425px) {
 	.nav {
 		max-width: 425px;

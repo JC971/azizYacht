@@ -52,7 +52,7 @@
 	color: #004587;
 	margin-bottom: 10px;
 	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-	
+	margin: 15px;
 }
 
 .makayImage {
@@ -72,9 +72,9 @@
 }
 
 .makayLogo {
-	padding-top: 20px;
+	height: 40px;
 	padding-left: 12px;
-
+	
 	width: 144px;
 }
 
@@ -83,16 +83,15 @@
 	color: white;
 	font-weight: 600;
 }
-@media(max-width:1024px){
-	.makayContainer{
+@media (max-width: 1024px) {
+	.makayContainer {
 		max-width: 1024px;
 		flex-wrap: wrap;
 	}
-	.makayCard{
+	.makayCard {
 		width: 85%;
 		margin-bottom: 20px;
 	}
-
 }
 
 @media (max-width: 1440px) {
@@ -129,7 +128,6 @@
 	}
 }
 @media (max-width: 425px) {
-
 	h2 {
 		font-size: 18px;
 	}

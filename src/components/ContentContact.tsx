@@ -1,4 +1,4 @@
-
+/*
 function ContentContact() {
   return (
     <div className="content-contact">
@@ -10,3 +10,4 @@ function ContentContact() {
 }
 
 export default ContentContact
+*/

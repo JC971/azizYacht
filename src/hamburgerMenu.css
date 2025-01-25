@@ -11,17 +11,6 @@
 
 }
 
-/* Styles du menu hamburger */
-.hamburger-menu .menu-toggle {
-	font-size: 16px;
-	cursor: pointer;
-	background: none;
-	border: none;
-	display: block;
-	z-index: 1001;
-	margin-right: 15px;
-}
-
 .hamburger-menu .navigation {
 	display: none;
 	flex-direction: column;
@@ -32,10 +21,12 @@
 	background-color: #ddd;
 	box-shadow: 0 4px 8px rgba(94, 97, 104, 0.903);
 	z-index: 1000;
+	
 }
 
 nav.navigation.show{
 	display: flex;
+	
 }
 
 .navigation.show {
@@ -44,6 +35,7 @@ nav.navigation.show{
 	right: 10px;
 	text-align: center;
 	padding: 0;
+	
 }
 
 .hamburger-menu .navigation a {
@@ -52,6 +44,7 @@ nav.navigation.show{
 	font-size: 8px;
 	margin: 0;
 	padding: 10px;
+	
 }
 
 .hamburger-menu .navigation a:hover {
@@ -84,14 +77,14 @@ nav.navigation.show{
 	.navigation.show a{
 	text-transform: lowercase;
 	letter-spacing: 0;
-	font-size: 12px;
+	font-size: 16px;
 	padding: 0;
 	margin-left: 0;
 	color: whitesmoke;
 	width: 100%;
 	border: none;
-	font-weight: bold;
-	line-height: 20px;
+
+	
 	z-index: 1000;
 	}
 }

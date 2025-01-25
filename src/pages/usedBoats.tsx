@@ -5,7 +5,7 @@ import Styles from "./usedBoats.module.css"
 const UsedBoats: React.FC = () => {
 	const newCards = [
 		{
-			title: "Grand Tourismo",
+			title: "Tourismo",
 			image: "/images/grand-turismo-1.jpg",
 			description:
 				"The GT 41 is designed for enjoyment at sea, combining sleek styling and great handling. It features a spacious aft sun pad, a large U-shaped lounge, an outdoor kitchen for dining, and two private cabins with beds perfectly aligned for optimal comfort.",
