@@ -16,7 +16,7 @@
 	margin-bottom: 0;
 	margin-top: 0;
 	text-transform: uppercase;
-	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 	font-size: 2rem;
 }
 .card {
@@ -35,7 +35,7 @@
 	color: #003366;
 	text-transform: uppercase;
 	font-weight: bold;
-	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 	letter-spacing: 3px;
 }
 
@@ -95,14 +95,13 @@
 	.teysisTitle {
 		font-size: 2rem;
 		letter-spacing: 2px;
-		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 	}
 	.cardImage {
 		object-fit: contain;
 		margin-bottom: 0;
 	}
 }
-/* 1024 px*/
+
 @media (max-width: 1024px) {
 	.cardsContainer {
 		width: 100%;

@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h2 {
+	color: rgb(86, 133, 160);
+	font-size: 2rem;
+}
+
+.container {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 430px) {
+    
+	p {
+		font-size: 1rem;
+		font-weight: bold;
+        margin: 0 auto; 
+        text-align: center;
+	}
+}
+@media (max-width: 425px) {
+	p {
+	display: none;
+
+	}
+}

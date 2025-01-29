@@ -13,7 +13,7 @@
 	margin-bottom: 0;
 	text-transform: uppercase;
 	font-size: 3rem;
-	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
 	display: none;
 }
 
@@ -30,6 +30,7 @@
 	display: flex;
 	justify-content: center;
 	padding: 20px 0 0;
+	margin: 15px 0;
 }
 
 .makayHeader img {
@@ -44,6 +45,7 @@
 	text-align: center;
 	background-color: #f8f8f8;
 	width: 30%;
+	
 }
 .cardTitle {
 	font-size: 1.5rem;
@@ -51,7 +53,7 @@
 	text-transform: uppercase;
 	color: #004587;
 	margin-bottom: 10px;
-	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 	margin: 15px;
 }
 
@@ -99,7 +101,7 @@
 		text-transform: uppercase;
 		font-size: 2rem;
 		letter-spacing: 2px;
-		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 	}
 }
 

@@ -13,14 +13,15 @@ import UsedBoats from "./pages/usedBoats";
 import CookiePopup from "./components/cookiePopup.tsx";
 import "../styles/popup.css";
 import Header from "./components/Header.tsx";
+import MakayDescriptions from "./components/makayDescriptions.tsx";
+import TeysisDescriptions from "./teysisDescriptions.tsx";
+import Rental from "./components/Rental.tsx";
 
 function App() {
 	return (
 		<div>
-			
 			<CookiePopup />
 
-		
 			<Header />
 
 			{/* Contenu principal avec espace pour le Header */}
@@ -33,9 +34,18 @@ function App() {
 						path="/rental"
 						element={
 							<>
-								<Home />
+								<Rental />
 							</>
 						}
+					/>
+					<Route
+						path="/home/teysis/details/:id"
+						element={<TeysisDescriptions />}
+					/>
+
+					<Route
+						path="/home/makay/details/:id"
+						element={<MakayDescriptions />}
 					/>
 					<Route path="/new" element={<NewBoats />} />
 					<Route path="/contact" element={<Contact />} />

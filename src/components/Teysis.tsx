@@ -9,18 +9,21 @@ import logoTeysis from "../images/logo.png";
 const Teysis: React.FC = () => {
 	const cards = [
 		{
+			id:1,
 			title: "Mirage 33",
 			image: imageMirage33,
 			description:
 				"The Mirage 33 is perfect for relaxation and leisure at sea. Combining simplicity and functionality, it offers a comfortable layout for those seeking serene and enjoyable boating experiences.",
 		},
 		{
+			id: 2,
 			title: "Odyssey 28",
 			image: imageOdyssey,
 			description:
 				"Designed by STAMA Design, the Odyssey 28 stands out with its sleek profile and refined finishes. It offers an elegant design paired with outstanding performance, making it ideal for both style and functionality.",
 		},
 		{
+			id:3,
 			title: "Mirage 18",
 			image: imageMirage18,
 			description:
@@ -52,7 +55,9 @@ const Teysis: React.FC = () => {
 							/>
 						</div>
 						<p className={styles.cardDescription}>{card.description}</p>
+						<Link to={`/home/teysis/details/${card.id}`}>
 						<button className={styles.viewDetailsButton}>View Details</button>
+						</Link>
 					</div>
 				))}
 			</div>

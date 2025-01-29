@@ -9,18 +9,21 @@ import logoMakay from "../images/makayLogo.png";
 const Makay: React.FC = () => {
 	const makayCards = [
 		{
-			title: "Makay",
+			id: 1,
+			title: "Makay 37",
 			image: makayAnchored,
 			description:
 				"The MAKAI M37 seamlessly combines luxury and performance, redefining powercat standards. Inspired by the timeless elegance of sports cars, it delivers unmatched comfort and exceptional design.",
 		},
 		{
+			id: 2,
 			title: "Port-side Cabin",
 			image: makayBabord,
 			description:
 				"The M37 motor catamaran features two well-appointed cabins: a spacious master cabin and a comfortable guest cabin. Both are designed for relaxation and privacy during your journeys.",
 		},
 		{
+			id: 3,
 			title: "Makay Cockpit",
 			image: makayCockpitRs,
 			description:
@@ -54,9 +57,11 @@ const Makay: React.FC = () => {
 							/>
 							<p className={styles.cardDescription}>{makayCard.description}</p>
 							<div className={styles.buttonContainer}>
-								<button className={styles.viewDetailsButton}>
-									View Details
-								</button>
+								<Link to={`/home/makay/details/${makayCard.id}`}>
+									<button className={styles.viewDetailsButton}>
+										View Details
+									</button>
+								</Link>
 							</div>
 						</div>
 					))}
