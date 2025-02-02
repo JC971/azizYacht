@@ -8,7 +8,6 @@ import Makay from '../components/makay';
 import UsedBoats from './usedBoats';
 
 
-
 function Home() {
   return (
 		<div>
