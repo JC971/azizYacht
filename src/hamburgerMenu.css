@@ -8,7 +8,6 @@
 
 .hamburger-menu {
 	position: relative;
-
 }
 
 .hamburger-menu .navigation {
@@ -21,12 +20,10 @@
 	background-color: #ddd;
 	box-shadow: 0 4px 8px rgba(94, 97, 104, 0.903);
 	z-index: 1000;
-	
 }
 
-nav.navigation.show{
+nav.navigation.show {
 	display: flex;
-	
 }
 
 .navigation.show {
@@ -35,7 +32,6 @@ nav.navigation.show{
 	right: 10px;
 	text-align: center;
 	padding: 0;
-	
 }
 
 .hamburger-menu .navigation a {
@@ -44,12 +40,10 @@ nav.navigation.show{
 	font-size: 8px;
 	margin: 0;
 	padding: 10px;
-	
 }
 
 .hamburger-menu .navigation a:hover {
 	background-color: #f0f0f028;
-	
 }
 
 /* Afficher la navigation mobile si isOpen est true */
@@ -66,25 +60,27 @@ nav.navigation.show{
 		display: flex; /* Affiche le menu hamburger */
 		align-items: center;
 		text-align: left;
-		
 	}
-	
-	.navigation.show{
+
+	.navigation.show {
 		width: 100%;
 		background-color: RGB(86, 133, 160);
 	}
+	.hamburger-menu {
+		width: 100px;
+	}
 
-	.navigation.show a{
-	text-transform: lowercase;
-	letter-spacing: 0;
-	font-size: 16px;
-	padding: 0;
-	margin-left: 0;
-	color: whitesmoke;
-	width: 100%;
-	border: none;
-
-	
-	z-index: 1000;
+	.navigation.show a {
+		text-transform: lowercase;
+		letter-spacing: 0;
+		font-size: 12px;
+		padding: 0;
+		margin-left: 0;
+		color: whitesmoke;
+		width: 100%;
+		border: none;
+		text-transform: uppercase;
+		line-height: 2;
+		z-index: 1000;
 	}
 }

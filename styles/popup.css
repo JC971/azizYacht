@@ -5,38 +5,105 @@
   right: 20px;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  padding: 20px;
+  padding: 15px 20px; /* Augmente l'espace pour le texte */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 2000;
-  height: 30px;
- 
+  max-width: 500px;
+  display: flex;
+  flex-direction: column; /* Affiche le texte au-dessus du bouton */
+  align-items: center;
+  justify-content: center;
 }
 
+/* Assure que le texte apparaît bien */
 .cookie-popup-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* Affiche le texte et le bouton en colonne */
   align-items: center;
-  
-
-}
-.cookie-popup p{
-  margin: 0;  
-  padding: 0;
-  font-size: 12px;
+  width: 100%;
+  text-align: center;
 }
 
+/* Corrige la visibilité du texte */
+.cookie-popup p {
+  margin: 0;
+  font-size: 14px;
+  padding-bottom: 10px;
+  width: 100%;
+  color: white; /* Assure que le texte est visible */
+}
 
+/* Ajuste le bouton */
 .cookie-popup button {
   background-color: #4CAF50;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 5px;
   cursor: pointer;
-  
+  white-space: nowrap;
+  font-size: 14px;
+  margin-top: 10px; /* Ajoute un espace entre le texte et le bouton */
 }
 
 .cookie-popup button:hover {
   background-color: #45a049;
+}
+
+/* ✅ Media Query pour les écrans ≤ 480px */
+@media (max-width: 480px) {
+  .cookie-popup {
+    max-width: 90%;
+    bottom: 30px;
+  }
+
+  .cookie-popup-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cookie-popup p {
+    width: 100%;
+  }
+
+  .cookie-popup button {
+    width: auto;
+  }
+}
+
+/* ✅ Media Query pour les écrans ≤ 425px */
+@media (max-width: 425px) {
+  .cookie-popup {
+    max-width: 95%;
+    bottom: 20px;
+    padding: 12px 15px; /* Réduit légèrement le padding */
+  }
+
+  .cookie-popup p {
+    font-size: 13px; /* Réduit la taille du texte */
+  }
+
+  .cookie-popup button {
+    padding: 6px 14px; /* Réduit la taille du bouton */
+    font-size: 13px;
+  }
+}
+
+/* ✅ Media Query pour les écrans ≤ 375px */
+@media (max-width: 375px) {
+  .cookie-popup {
+    max-width: 95%;
+    bottom: 15px;
+    padding: 10px 12px; /* Réduction du padding pour s'adapter aux petits écrans */
+  }
+
+  .cookie-popup p {
+    font-size: 12px; /* Réduit encore la taille du texte */
+  }
+
+  .cookie-popup button {
+    padding: 5px 12px; /* Bouton plus petit */
+    font-size: 12px;
+  }
 }

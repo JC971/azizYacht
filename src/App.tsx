@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./components/NotFound";
 import Home from "./pages/Home";
 import "./components/caroussel.css";
-import NewBoats from "./pages/NewBoats";
+
 import UsedBoats from "./pages/usedBoats";
 import CookiePopup from "./components/cookiePopup.tsx";
 import "../styles/popup.css";
@@ -16,6 +16,8 @@ import Header from "./components/Header.tsx";
 import MakayDescriptions from "./components/makayDescriptions.tsx";
 import TeysisDescriptions from "./teysisDescriptions.tsx";
 import Rental from "./components/Rental.tsx";
+import Teysis from "./components/Teysis.tsx";
+//import NewDescription from "./pages/newDescription.tsx";
 
 function App() {
 	return (
@@ -47,7 +49,7 @@ function App() {
 						path="/home/makay/details/:id"
 						element={<MakayDescriptions />}
 					/>
-					<Route path="/new" element={<NewBoats />} />
+					<Route path="/new" element={<Teysis />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>

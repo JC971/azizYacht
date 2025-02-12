@@ -1,6 +1,6 @@
 import { useState, FormEvent } from "react";
-
 import '../../styles/contentContact.css';
+import contactImage from "../images/odyssey-28.jpg"
 
 const Contact = () => {
 	const [formData, setFormData] = useState({
@@ -59,8 +59,11 @@ const Contact = () => {
 
 	return (
 		<>
+			<div className="contactImage">
+				<img src={contactImage} alt="" />
+			</div>
 			<div className="formulaire">
-				<h2 className="formTitle">Contact Us</h2>
+				<h2 className="formTitle">Nous Contacter</h2>
 				<form onSubmit={handleSubmit} className="form-contact">
 					<div className="nameDiv">
 						<label htmlFor="name">Name:</label>

@@ -1,0 +1,118 @@
+.containerUsed {
+	display: flex;
+	justify-content: center;
+
+	width: 100%;
+}
+
+.boatsList {
+	display: flex;
+	flex-direction: row; /* Aligne les éléments en ligne */
+	flex-wrap: nowrap; /* Empêche le retour à la ligne */
+	justify-content: flex-start; /* Alignement à gauche */
+	gap: 0px; /* Supprime l'espace entre les cartes */
+	width: 100%;
+}
+
+.boatCard {
+	width: calc(100% / 3); /* Divise en trois parts égales */
+	max-width: 33.33%; /* Assure que chaque carte occupe le tiers de l'écran */
+	text-align: center;
+	padding: 5px; /* Ajoute un peu d'espace intérieur */
+	margin: 0; /* Supprime tout espace extérieur */
+}
+
+.boatImage {
+	padding-left: 5px;
+	height: 225px; /* Garde le ratio des images */
+	object-fit: cover; /* Remplit l'espace sans distorsion */
+	border-radius: 8px; /* Coins légèrement arrondis */
+	width: 100%;
+}
+
+.boatTitle {
+	font-size: 1.5rem;
+	margin: 15px;
+	color: #003366;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+	letter-spacing: 3px;
+}
+
+.title {
+	text-align: center;
+	letter-spacing: 5px;
+	color: #004587;
+	background-color: #ffffff;
+	padding: 40px 0 20px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+.containerUsed {
+	display: flex;
+	justify-content: center;
+}
+
+.boatsList {
+	display: flex;
+	flex-direction: row; /* Aligne les éléments en ligne */
+	flex-wrap: nowrap; /* Empêche le retour à la ligne */
+	justify-content: flex-start; /* Alignement à gauche */
+	gap: 0px; /* Supprime l'espace entre les cartes */
+}
+
+.boatCard {
+	width: calc(100% / 3); /* Divise en trois parts égales */
+	max-width: 33.33%; /* Assure que chaque carte occupe le tiers de l'écran */
+	text-align: center;
+	padding: 0px; /* Ajoute un peu d'espace intérieur */
+	margin: 0; /* Supprime tout espace extérieur */
+}
+
+.boatImage {
+	height: 225px; /* Fixe une hauteur pour garder un ratio homogène */
+	object-fit: cover; /* Remplit l'espace sans distorsion */
+	border-radius: 8px; /* Coins légèrement arrondis */
+	width: 100%;
+}
+
+@media (max-width: 1024px) {
+	.title {
+		font-size: 1.5rem;
+	}
+}
+
+/* ✅ Media Query pour afficher seulement deux images sur les petits écrans */
+@media (max-width: 768px) {
+	.containerUsed {
+		max-width: 768px;
+		padding: 8px;
+	}
+	.title {
+		font-size: 1.2rem;
+		padding-bottom: 10px;
+	}
+	.boatsList {
+		justify-content: center; /* Centre les images */
+	}
+	.boatCard {
+		width: calc(100% / 1); /* Passe à deux colonnes */
+		max-width: 50%; /* Chaque carte prend la moitié de la largeur */
+	}
+	.boatImage {
+		height: 207px;
+	}
+
+	.boatCard:nth-child(n + 3) {
+		display: none;
+	}
+}
+
+@media(max-width: 430px){
+	.title{
+		font-size: 1rem;
+	}
+}

@@ -1,8 +1,8 @@
 
 export const navigationLinks = [
-	{ path: "/home", label: "HOME" },
-	{ path: "/new", label: "NEW" },
-	{ path: "/used", label: "USED" },
-	{ path: "/rental", label: "RENTAL" },
-	{ path: "/contact", label: "CONTACT US" },
+	{ path: "/home", label: "ACCUEIL" },
+	{ path: "/new", label: "NEUF" },
+	{ path: "/used", label: "OCCASION" },
+	{ path: "/rental", label: "LOCATION" },
+	{ path: "/contact", label: "CONTACTEZ NOUS" },
 ];

@@ -1,9 +1,11 @@
 .heroSection {
-	background-image: url("../images/imageMazizHome.jpg");
+	background-image: url(../images/image-home-makay.jpg);
+	background-image: url(../images/image-home.jpg);
+	background-color: RGB(0, 75, 116);
 	background-size: cover;
 	background-position: center;
 	width: 100%;
-	height: 100vh;
+	height:100vh;
 	display: flex;
 	color: white;
 	text-align: center;
@@ -12,14 +14,15 @@
 	margin-left: auto;
 	z-index: 2;
 	transition: opacity 0.6s ease-out;
+	
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	text-transform: uppercase;
 	text-align-last: left;
 	line-height: 1.4em;
-	margin: 50px;
+	margin-bottom: 50px;
 	letter-spacing: 12px;
 	text-align: left;
 }
@@ -27,13 +30,19 @@ h1 {
 .heroContent {
 	position: relative;
 	padding: 20px;
-	top: 20px;
-	left: 0px;
 	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+	width: 100%;
+	height: 68%;
 }
 
+
 .heroNavigation {
-	margin: 50px;
 	z-index: 300;
 }
 
@@ -51,23 +60,26 @@ h1 {
 	margin-top: 30px;
 	border-radius: 10px;
 	background-color: #ffff;
-	padding: 8px 0;
+	padding: 20px ;
 	color: RGB(0, 98, 141);
 	height: 30px;
 	color: RGB(1, 17, 44);
 	transition: all 0.3s ease;
+	font-family: '';
+	
 }
 
 .heroNavigation a:hover {
 	color: rgb(86, 133, 160);
-	font-size: 12px;
+
+	font-size: 16px;
 	font-weight: 800;
 }
 
 .rightArrow {
 	width: 52px;
 	padding-left: 30px;
-	display: none;
+	
 }
 
 .heroText {
@@ -78,10 +90,45 @@ h1 {
 	font-weight: 600;
 	line-height: 1.5;
 }
+
+.navLink {
+    position: relative;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+	font-family: 'Oswald';
+}
+
+.navLink::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navLink:hover {
+    color: #007bff;
+}
+
+.navLink:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+
 @media (max-width: 1440px) {
 	.heroContent {
-		height: 90vh;
-		padding: 0 ;
+	
+		padding: 0;
 	}
 	.heroText {
 		margin-top: 10px;
@@ -101,6 +148,7 @@ h1 {
 		font-weight: 600;
 	}
 }
+
 
 @media (max-width: 768px) {
 	.heroSection {
@@ -127,20 +175,19 @@ h1 {
 		text-align: left;
 	}
 }
-@media(max-width:430px){
-	.heroNavigation{
+@media (max-width: 430px) {
+	.heroNavigation {
 		width: 430px;
 	}
-	h1{
+	h1 {
 		padding-left: 12px;
 		margin-left: 10px;
 	}
-	.heroText{
+	.heroText {
 		margin-left: 10px;
 		margin-top: 0;
 	}
-	.heroContent{
-		
+	.heroContent {
 		max-width: 430px;
 	}
 }
@@ -148,20 +195,24 @@ h1 {
 @media (max-width: 425px) {
 	.heroSection {
 		width: 425px;
-
 	}
-h1{
-	padding: 12px;
-	margin:	0;
-
-}
-	.heroContent{
+	h1 {
+		padding: 12px;
+		margin: 0;
+		font-size: 22px;
+		
+	}
+	.heroContent {
 		max-width: 425px;
-		top: 50px;
-	}
 	
-	.heroText{
-	margin: 0 8px;
+		
+	}
+	.heroContent h1 {
+		font-size: 22px;
+	}
+
+	.heroText {
+		margin: 0 8px;
 	}
 	.heroNavigation {
 		margin-left: 0;
@@ -183,37 +234,35 @@ h1{
 		display: flex;
 		width: 375px;
 	}
-.heroContent h1{
-	font-size: 1rem;
-	letter-spacing: 8px;
-}
-	
+	.heroContent h1 {
+		font-size: 1rem;
+		letter-spacing: 8px;
+	}
+
 	.heroNavigation {
 		margin-top: 30px;
 		margin-right: 0px;
 	}
-	
-	.heroContent{
+
+	.heroContent {
 		margin: 0;
 		padding: 0;
 		max-width: 375px;
 	}
-	.heroText{
+	.heroText {
 		margin-left: 0;
 		margin-right: 0;
-		padding-left:12px ;
+		padding-left: 12px;
 		padding-right: 0;
 		font-size: 14px;
 		font-size: 14px;
 	}
-
-	
 }
-@media (max-width:320px){
-	.heroSection{
+@media (max-width: 320px) {
+	.heroSection {
 		width: 320px;
 	}
-	.heroContent{
+	.heroContent {
 		width: 320px;
 	}
 }

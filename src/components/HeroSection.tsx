@@ -1,5 +1,4 @@
 import styles from "./HeroSection.module.css";
-import arrow from "../images/fleche-droite.png";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -19,30 +18,26 @@ const HeroSection = () => {
 		<div
 			className={styles.heroSection}
 			style={{
-				opacity: Math.max(1 - scrollPosition / 300, 0),
+				opacity: Math.max(1 - scrollPosition / 300, 0.3),
 				pointerEvents: scrollPosition > 300 ? "none" : "auto",
 			}}
 		>
 			
 			<div className={styles.heroContent}>
 				<h1 className={styles.heroTitle}>
-					French Riviera
-					<br /> To Tunisia
+				m. aziz yachting
 				</h1>
 				<nav className={styles.heroNavigation}>
-					<Link to="/contact" className={styles.newModels}>
-						BOATS FOR SALE
-						<img src={arrow} alt="" className={styles.rightArrow} />
+					<Link to="/new" className={styles.navLink}>
+						BATEAUX NEUFS
 					</Link>
-					<Link to="/contact" className={styles.usedModels}>
-						LIST YOUR BOAT
-						<img src={arrow} alt="" className={styles.rightArrow} />
+					<Link to="/used"  className={styles.navLink}>
+						BATEAUX D'OCCASIONS
 					</Link>
+					
 				</nav>
 				<p className={styles.heroText}>
-					Discover exclusive yacht sales,
-					<br /> luxury charters, and premium brokerage services <br /> along
-					the stunning French Riviera.
+					French Riviera to Tunisia
 				</p>
 			</div>
 		</div>

@@ -6,9 +6,9 @@ const cards = [
 	{
 		id: 1,
 		title: "Mirage 33",
-		image: mirage33,
+		image: mirage33, 
 		description:
-			"The Mirage 33 is perfect for relaxation and leisure at sea. Combining simplicity and functionality, it offers a comfortable layout for those seeking serene and enjoyable boating experiences.",
+			"Le Mirage 33 est parfait pour la détente et les loisirs en mer. Alliant simplicité et fonctionnalité, il offre un aménagement confortable pour ceux qui recherchent des expériences de navigation sereines et agréables.",
 		technicalDetails: {
 			length: 33.5,
 			width: 11.67,
@@ -17,11 +17,13 @@ const cards = [
 			maxMotorization: 740,
 			passengerCapacity: 12,
 		},
-		teysisBoatsDescription: `The Mirage 33 is a sailboat designed by Robert Perry and first built in 1982 by Mirage Yachts in Canada.
-        Hypalon is widely used in the construction of RIBs (Rigid Inflatable Boats) and dinghies because of its durability and water resistance.
-        The combination of UV resistance, abrasion resistance, and waterproof properties makes Hypalon an unmatched material for marine environments, where exposure to saltwater and sunlight is constant.
-        Embark on unforgettable adventures with the Mirage 33, a vessel designed to cater to your every need on the water. Whether you're cruising along serene coastlines or braving the open sea, the Mirage 33 delivers unparalleled comfort and performance.
-        The Mirage 33 isn't just a boat—it's your ticket to freedom, adventure, and unparalleled enjoyment on the water. Set sail on your dreams today and make the Mirage 33 your gateway to the perfect marine lifestyle.`,
+		teysisBoatsDescription: `Mirage 33 : Élégance et performance sur l'eau
+
+Le Mirage 33 est un bateau d'exception qui incarne à la fois sophistication et puissance. Conçu pour les amateurs de navigation haut de gamme, ce modèle allie des lignes modernes à des performances remarquables.
+
+Avec ses 33 pieds de longueur, il offre un espace généreux et bien aménagé, idéal pour des sorties en mer en famille ou entre amis. L'intérieur est pensé pour le confort, avec des matériaux de qualité supérieure et une finition irréprochable.
+
+Côté motorisation, le Mirage 33 est équipé de moteurs performants, garantissant une navigation fluide et une maniabilité exemplaire, même à haute vitesse. Son design ergonomique et ses équipements modernes en font un choix parfait pour les passionnés de plaisance qui recherchent à la fois luxe et sensations.`,
 	},
 	{
 		id: 2,

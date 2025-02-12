@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-//import boatsMakayData from "../../src/boatsMakayData";
 import boatsTeysisData from "../src/boatsTeysisData";
 
 import {
@@ -28,16 +27,16 @@ const TeysisDescriptions: React.FC = () => {
 	}
 
 	const rows = [
-		{ key: "Length", value: `${card.technicalDetails.length || "N/A"} Feet` },
-		{ key: "Width", value: `${card.technicalDetails.width || "N/A"} Feet` },
-		{ key: "Draft", value: `${card.technicalDetails.draft || "N/A"} Feet` },
-		{ key: "Cabins", value: `${card.technicalDetails.cabins || "N/A"} Nbr` },
+		{ key: "Longueur", value: `${card.technicalDetails.length || "N/A"} Feet` },
+		{ key: "Largeur", value: `${card.technicalDetails.width || "N/A"} Feet` },
+		{ key: "Tirant d'eau", value: `${card.technicalDetails.draft || "N/A"} Feet` },
+		{ key: "Cabines", value: `${card.technicalDetails.cabins || "N/A"} Nbr` },
 		{
-			key: "Max Motorization",
+			key: "Motorisation Maximale",
 			value: `${card.technicalDetails.maxMotorization || "N/A"} Hp`,
 		},
 		{
-			key: "Passenger Capacity",
+			key: "Capacité de passagers",
 			value: `${card.technicalDetails.passengerCapacity || "N/A"}`,
 		},
 	];
