@@ -1,8 +1,8 @@
 import mirage33 from "./images/Mirage-33.jpg";
 import imageOdyssey from "./images/odyssey_28.jpg";
 import imageMirage18 from "./images/mirage_18.jpg";
-
-const cards = [
+//bateaux neufs vers descriptif de chaque  bateau
+const cardsTech = [
 	{
 		id: 1,
 		title: "Mirage 33",
@@ -90,4 +90,4 @@ With its thoughtful design, the Mirage 18 maximizes space and functionality, pro
 	},
 ];
 
-export default cards;
+export default cardsTech;

@@ -7,8 +7,12 @@ import imageMirage26 from "../images/mirage_26.jpg";
 import imageMirage18 from "../images/mirage_18.jpg";
 import logoTeysis from "../images/logo.png";
 import m18lg from "../images/mirage_18_lg.jpg";
+import m30 from "../images/mirage30Accueil.jpg";
+import m23 from "../images/mirage23.jpg";
+import od25 from "../images/odyssey-25.jpg";
+import m20 from "../images/mirage20Accueil.jpg";
 
-
+//page bateaux neufs
 
 
 const Teysis: React.FC = () => {
@@ -42,7 +46,7 @@ const Teysis: React.FC = () => {
 		{
 			id: 3,
 			title: "Mirage 30",
-			image: imageMirage18,
+			image: m30,
 			description:
 				"Le Mirage 30 offre un parfait équilibre entre confort, design et performance. Avec ses lignes élégantes, son espace optimisé et sa motorisation performante, il garantit une navigation fluide et agréable pour des moments inoubliables en mer, seul ou accompagné.",
 		},
@@ -56,14 +60,14 @@ const Teysis: React.FC = () => {
 		{
 			id: 5,
 			title: "Mirage 23",
-			image: imageMirage18,
+			image: m23,
 			description:
 				"Le Mirage 23 est un bateau compact et élégant, conçu pour allier confort et performance. Son agencement optimisé offre une navigation fluide et agréable, idéale pour des sorties en mer en toute sérénité, que ce soit en famille ou entre amis.",
 		},
 		{
 			id: 6,
 			title: "Odyssey 25",
-			image: imageMirage18,
+			image: od25,
 			description:
 				"L'Odyssey 25 combine design raffiné et praticité. Son agencement intelligent et sa navigation fluide en font un bateau idéal pour des escapades en mer, alliant confort, performance et plaisir, que ce soit pour des sorties en famille ou entre amis.",
 		},
@@ -71,7 +75,7 @@ const Teysis: React.FC = () => {
 		{
 			id: 7,
 			title: "Mirage 20",
-			image: imageMirage18,
+			image: m20,
 			description:
 				"le Mirage 20: l'équilibre de tous les composants font la valeur essentielle de ce magnifique bateau. Facile à tracter et garer, le Mirage 20, de 6m de longueur, offre à ses hôtes tout l'aspect et le confort pour une vie à bord de première qualité",
 		},
@@ -88,21 +92,7 @@ const Teysis: React.FC = () => {
 			image: imageMirage18,
 			description:
 				"Cest le tout petit de la famille. Mais c'est le plus stupéfiant. Le Mirage 15 transporte confortablement et en toute sécurité 5 personnes, il est doté de vastes coffres, supporte sans problème un H.B de 90 cv et adopte un navigation rapide et aisé selon l'humeur de son pilote",
-		},
-		{
-			id: 10,
-			title: "Mirage Tender 355",
-			image: imageMirage18,
-			description:
-				"Le TENDER 355 est le tout petit de la gamme TENDER, il peut accueillir une motorisation jusqu’à 40cv. C’est un bateau « work » par excellence et vous pouvez l’utiliser aussi comme une annexe très légère pour les bateaux à moteur ou les voiliers ; c’est le « dinghy » idéal.",
-		},
-		{
-			id: 11,
-			title: "Mirage Tender 450",
-			image: imageMirage18,
-			description:
-				"LE TENDER 450 est le cadet de la gamme TENDER, idéal pour les gens qui recherchent un bateau fiable et sûr. Facile à transporter, il accepte une motorisation jusqu’à 90cv.",
-		},
+		}
 	];
 
 	return (

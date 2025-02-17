@@ -1,7 +1,6 @@
 .containerUsed {
 	display: flex;
 	justify-content: center;
-
 	width: 100%;
 }
 
@@ -45,7 +44,7 @@
 	letter-spacing: 5px;
 	color: #004587;
 	background-color: #ffffff;
-	padding: 40px 0 20px;
+	padding: 40px 0 30px;
 	margin-bottom: 0;
 	text-transform: uppercase;
 	font-size: 2rem;
@@ -54,6 +53,7 @@
 .containerUsed {
 	display: flex;
 	justify-content: center;
+	padding: 0 0 20px 0;
 }
 
 .boatsList {
@@ -73,7 +73,7 @@
 }
 
 .boatImage {
-	height: 225px; /* Fixe une hauteur pour garder un ratio homogène */
+	height: 290px; /* Fixe une hauteur pour garder un ratio homogène */
 	object-fit: cover; /* Remplit l'espace sans distorsion */
 	border-radius: 8px; /* Coins légèrement arrondis */
 	width: 100%;
