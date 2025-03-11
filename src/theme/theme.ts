@@ -1,5 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 
+//theme pour la page de description des bateaux neufs
+
 const theme = createTheme({
 	components: {
 		MuiCssBaseline: {
@@ -21,3 +23,4 @@ const theme = createTheme({
 });
 
 export default theme;
+

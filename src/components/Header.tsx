@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logHome from "../../src/images/logo.png";
 import HamburgerMenu from "./HamburgerMenu"; // 
-import { navigationLinks } from "../../navigationLinks"; // Importez les liens réutilisables
+import { navigationLinks } from "../../navigationLinks"; //  liens réutilisables
 
 const Header: React.FC = () => {
 	return (

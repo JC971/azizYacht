@@ -7,9 +7,9 @@ import image5 from "../images/mirage23.jpg";
 import image6 from "../images/mirage20Accueil.jpg";
 import image7 from "../images/mirage18Accueil.jpg";
 import image8 from "../images/mirage15.jpg";
-
+// photocontainer page acceuil images bateaux neufs
 import PhotoContainer from "../components/PhotoContainer";
-import HomeUsed from "../components/HomeUsed";
+
 
 
 function Home() {
@@ -20,7 +20,7 @@ function Home() {
 
 			<PhotoContainer images={images} />
 			
-			<HomeUsed />
+			
 		</div>
 	);
 }

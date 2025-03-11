@@ -24,7 +24,7 @@ const Teysis: React.FC = () => {
 			setFadeOut(true);
 			setTimeout(()=>setShowImage(false), 2000)
 		
-		}, 2000);
+		},300);
 		return () => clearTimeout(timer)
 	}, []);
 

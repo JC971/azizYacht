@@ -1,3 +1,4 @@
+/*
 import React from "react";
 import Styles from "./newBoats.module.css";
 import imageMirage33 from "../images/Mirage-33.jpg";
@@ -81,3 +82,4 @@ const NewBoats: React.FC = () => {
 };
 
 export default NewBoats;
+*/

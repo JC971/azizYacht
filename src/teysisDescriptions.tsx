@@ -1,7 +1,6 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 import boatsTeysisData from "../src/boatsTeysisData";
-
+import { ThemeProvider, CssBaseline, createTheme } from "@mui/material";
 import {
 	Table,
 	TableBody,
@@ -13,153 +12,113 @@ import {
 	Box,
 } from "@mui/material";
 
+// Création du thème local uniquement pour ce composant
+const theme = createTheme({
+	typography: {
+		h4: {
+			color: "#1976d2",
+			fontWeight: "bold",
+			textAlign: "center",
+			padding: "50px",
+		},
+		body1: {
+			textAlign: "justify",
+			fontSize: "1.1rem",
+			lineHeight: 1.5,
+			color: "#333",
+		},
+	},
+	components: {
+		MuiTableCell: {
+			styleOverrides: {
+				root: {
+					fontSize: "1rem",
+					color: "#333",
+				},
+			},
+		},
+	},
+});
 
-const TeysisDescriptions: React.FC = () => {
+const TeysisDescriptions = () => {
 	const { id } = useParams<{ id: string }>();
-	const card = boatsTeysisData.find((b) => b.id === parseInt(id || "0", 10));
+	const boat = boatsTeysisData.find((boat) => boat.id === Number(id));
 
-	if (!card) {
+	if (!boat) {
 		return (
-			<Typography variant="h5" color="error" align="center">
-				Boat not found
-			</Typography>
+			<ThemeProvider theme={theme}>
+				<CssBaseline />
+				<Typography
+					variant="h5"
+					color="error"
+					align="center"
+					sx={{ marginTop: 4 }}
+				>
+					Bateau non trouvé
+				</Typography>
+			</ThemeProvider>
 		);
 	}
 
-	const rows = [
-		{ key: "Longueur", value: `${card.technicalDetails.length || "N/A"} Feet` },
-		{ key: "Largeur", value: `${card.technicalDetails.width || "N/A"} Feet` },
-		{ key: "Tirant d'eau", value: `${card.technicalDetails.draft || "N/A"} Feet` },
-		{ key: "Cabines", value: `${card.technicalDetails.cabins || "N/A"} Nbr` },
+	const technicalDetails = [
+		{ key: "Longueur", value: `${boat.technicalDetails.length} pieds` },
+		{ key: "Largeur", value: `${boat.technicalDetails.width} pieds` },
+		{ key: "Tirant d'eau", value: `${boat.technicalDetails.draft} pieds` },
+		{ key: "Cabines", value: String(boat.technicalDetails.cabins) },
 		{
-			key: "Motorisation Maximale",
-			value: `${card.technicalDetails.maxMotorization || "N/A"} Hp`,
+			key: "Motorisation max",
+			value: `${boat.technicalDetails.maxMotorization} CV`,
 		},
 		{
-			key: "Capacité de passagers",
-			value: `${card.technicalDetails.passengerCapacity || "N/A"}`,
+			key: "Capacité passagers",
+			value: String(boat.technicalDetails.passengerCapacity),
 		},
 	];
 
 	return (
-		<Box sx={{ padding: 4 }}>
-			{/* Titre et Image */}
-			<Box
-				sx={{
-					display: "flex",
-					flexDirection: "column",
-					alignItems: "center",
-					gap: 2,
-					margin: "50px",
-					"@media (max-width:375px)": {
-						margin: "50px 0",
-						padding: "20px auto",
-						fontSize: "12px",
-						fontWeight: "bold",
-						textAlign: "left",
-					},
-				}}
-			>
-				<Typography
-					variant="h4"
-					gutterBottom
-					sx={{
-						color: "rgb(86, 133, 160)",
-						fontWeight: "bolder",
-						"@media (max-width:375px)": {
-							margin: "0",
-							padding: "0",
-							fontSize: "18px",
-						},
-					}}
-				>
-					{card.title}
+		<ThemeProvider theme={theme}>
+			<CssBaseline />
+			<Box sx={{ padding: 3 }}>
+				{/* Titre du bateau */}
+				<Typography variant="h4" gutterBottom>
+					{boat.title}
 				</Typography>
-				<img
-					src={card.image}
-					alt={card.title}
-					style={{
-						width: "100%",
-						maxWidth: "500px",
-						borderRadius: "8px",
-						boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-					}}
-				/>
+
+				{/* Image du bateau */}
+				<Box
+					sx={{ display: "flex", justifyContent: "center", marginBottom: 3 }}
+				>
+					<img
+						src={boat.image}
+						alt={boat.title}
+						style={{
+							width: "100%",
+							maxWidth: "500px",
+							borderRadius: "8px",
+							boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+						}}
+					/>
+				</Box>
+
+				{/* Description du bateau */}
 				<Typography
 					variant="body1"
-					align="center"
-					gutterBottom
-					sx={{
-						fontSize: "1.2rem",
-						lineHeight: "1.6",
-						color: "#555",
-						textAlign: "center",
-						margin: "20px 0",
-						padding: "10px",
-						backgroundColor: "#f9f9f9",
-						borderRadius: "8px",
-						boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-						"@media (max-width:430px)": {
-							margin: "0",
-							padding: "20px auto",
-							fontSize: "16px",
-							fontWeight: "bold",
-							textAlign: "left",
-						},
-						"@media (max-width:375px)": {
-							margin: "0",
-							padding: "20px auto",
-							fontSize: "12px",
-							fontWeight: "bold",
-							textAlign: "left",
-						},
-					}}
+					sx={{ marginBottom: 3, margin: "20px 60px" }}
 				>
-					{card.description}
+					{boat.teysisBoatsDescription}
 				</Typography>
-				<Typography
-					sx={{
-						fontSize: "1rem",
-						lineHeight: "1.5",
-						color: "#333",
-						marginTop: "20px",
-						textAlign: "left",
-						"@media (max-width:430px)": {
-							margin: "0",
-							padding: "20px auto",
-							fontSize: "14px",
-							fontWeight: "bold",
-							textAlign: "justify",
-						},
-					}}
-				>
-					{card.teysisBoatsDescription}
-				</Typography>
-			</Box>
 
-			{/* Technical Details */}
-			<Box sx={{ marginTop: 4 }}>
-				<Typography
-					variant="h5"
-					gutterBottom
-					sx={{ textDecoration: "underline", textAlign: "center" }}
-				>
-					Technical Details
-				</Typography>
+				{/* Tableau des caractéristiques techniques */}
 				<TableContainer
 					component={Paper}
 					sx={{ maxWidth: "600px", margin: "0 auto" }}
 				>
 					<Table>
 						<TableBody>
-							{rows.map((row, index) => (
+							{technicalDetails.map((row, index) => (
 								<TableRow
 									key={index}
-									sx={{
-										"&:nth-of-type(odd)": {
-											backgroundColor: "#f9f9f9",
-										},
-									}}
+									sx={{ "&:nth-of-type(odd)": { backgroundColor: "#f9f9f9" } }}
 								>
 									<TableCell sx={{ fontWeight: "bold", color: "#1976d2" }}>
 										{row.key}
@@ -171,7 +130,7 @@ const TeysisDescriptions: React.FC = () => {
 					</Table>
 				</TableContainer>
 			</Box>
-		</Box>
+		</ThemeProvider>
 	);
 };
 

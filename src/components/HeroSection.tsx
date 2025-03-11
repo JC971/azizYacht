@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 const HeroSection = () => {
 	const [scrollPosition, setScrollPosition] = useState(0);
+	
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -11,7 +12,10 @@ const HeroSection = () => {
 		};
 
 		window.addEventListener("scroll", handleScroll);
+			
+
 		return () => window.removeEventListener("scroll", handleScroll);
+		
 	}, []);
 
 	return (
@@ -24,21 +28,16 @@ const HeroSection = () => {
 		>
 			
 			<div className={styles.heroContent}>
-				<h1 className={styles.heroTitle}>
-				m. aziz yachting
-				</h1>
+				<h1 className={styles.heroTitle}>m. aziz yachting</h1>
 				<nav className={styles.heroNavigation}>
 					<Link to="/new" className={styles.navLink}>
 						BATEAUX NEUFS
 					</Link>
-					<Link to="/used"  className={styles.navLink}>
+					<Link to="/used" className={styles.navLink}>
 						BATEAUX D'OCCASIONS
 					</Link>
-					
 				</nav>
-				<p className={styles.heroText}>
-					French Riviera to Tunisia
-				</p>
+				<p className={styles.heroText}>French Riviera to Tunisia</p>
 			</div>
 		</div>
 	);

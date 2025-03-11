@@ -5,6 +5,7 @@
 	background-color: #f8f8f8;
 	top: 0;
 	z-index: 2000;
+	
 }
 
 header {
@@ -31,7 +32,7 @@ header {
 	color: #ffffff;
 	margin: 0 20px 0 5PX;
 	width: 40px;
-	font-size: 12px;
+	font-size: 14px;
 	letter-spacing: 2.5px;
 	color: black;
 	font-weight: bold;

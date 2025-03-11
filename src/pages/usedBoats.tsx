@@ -8,38 +8,38 @@ const UsedBoats: React.FC = () => {
 			title: "Tourismo",
 			image: "/images/grand-turismo-1.jpg",
 			description:
-				"The GT 41 is designed for enjoyment at sea, combining sleek styling and great handling. It features a spacious aft sun pad, a large U-shaped lounge, an outdoor kitchen for dining, and two private cabins with beds perfectly aligned for optimal comfort.",
+				"Le GT 41 est conçu pour le plaisir en mer, alliant un design élégant et une excellente maniabilité. Il dispose d'un vaste bain de soleil arrière, d'un grand salon en U, d'une cuisine extérieure pour les repas et de deux cabines privées avec des lits parfaitement alignés pour un confort optimal.",
 		},
 		{
-			title: "Helm station",
+			title: "Poste de pilotage",
 			image: "/images/grand-turismo-3-1.jpg",
 			description:
-				"The helm station provides a commanding view with a sleek, ergonomic layout. Equipped with modern navigation tools, it ensures smooth control and safe operation, even under challenging conditions, while offering a comfortable driving experience.",
+				"La station de pilotage offre une vue dominante avec une disposition élégante et ergonomique. Équipée d'outils de navigation modernes, elle garantit un contrôle fluide et une utilisation sécurisée, même dans des conditions difficiles, tout en assurant une expérience de conduite confortable.",
 		},
 
 		{
-			title: "Saloon",
+			title: "Carré",
 			image: "/images/grand-turismo-4.jpg",
 			description:
-				"The saloon is a perfect space for families, offering ample seating and a relaxing atmosphere. It allows for shared moments of joy, whether during a lively meal or a quiet evening, ensuring comfort and autonomy on the water.",
+				"Le salon est un espace idéal pour les familles, offrant de larges assises et une atmosphère relaxante. Il permet de partager des moments de joie, que ce soit lors d’un repas animé ou d’une soirée paisible, assurant confort et autonomie sur l’eau.",
 		},
 		{
-			title: "Forward Cabin",
+			title: "Cabine avant",
 			image: "/images/grand-turismo-6.jpg",
 			description:
-				"The forward cabin offers a peaceful retreat with a spacious double bed and natural light from skylights. Designed for extended journeys, it provides thoughtful storage and a relaxing atmosphere, ideal for a comfortable night's rest.",
+				"La cabine avant offre un refuge paisible avec un lit double spacieux et une lumière naturelle provenant des puits de lumière. Conçue pour les voyages prolongés, elle dispose de rangements bien pensés et d'une atmosphère relaxante, idéale pour une nuit de repos confortable.",
 		},
 		{
-			title: "Owner's Cabin",
+			title: "Cabine du propriétaire",
 			image: "/images/grand-turismo-6-1.jpg",
 			description:
-				"The owner's cabin is a luxurious sanctuary with a queen-size bed, elegant furnishings, and large windows for natural light. Featuring an ensuite bathroom and generous storage, it combines style and comfort for longer stays aboard.",
+				"La cabine du propriétaire est un sanctuaire luxueux avec un lit queen-size, un mobilier élégant et de grandes fenêtres laissant entrer la lumière naturelle. Dotée d’une salle de bain privative et de nombreux rangements, elle allie style et confort pour de longs séjours à bord.",
 		},
 		{
-			title: "Portside Cabin",
+			title: "Cabine babord",
 			image: "/images/grand-turismo-6-2.jpg",
 			description:
-				"The portside cabin is cozy and versatile, with twin beds that convert into a double. Cleverly designed storage, ample lighting, and practical layout make it ideal for accommodating guests or additional needs with ease.",
+				"La cabine bâbord est chaleureuse et polyvalente, avec des lits jumeaux convertibles en lit double. Son agencement astucieux, ses rangements bien pensés et son éclairage généreux en font un espace idéal pour accueillir des invités ou répondre à des besoins supplémentaires en toute simplicité.",
 		},
 	];
 	return (

@@ -1,0 +1,39 @@
+.detailImage {
+	width: 100%;
+	width: 500px;
+    max-height: 300px;
+    object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-bottom: 10px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1976d2;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.imageGrid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.imageItem {
+    width: 100%;
+    max-width: 180px; /* Taille uniforme */
+    height: 120px; /* Fixe une hauteur */
+    object-fit: cover; /* Ajuste l’image pour remplir l’espace */
+    border-radius: 5px;
+    
+}
