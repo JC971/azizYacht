@@ -21,6 +21,15 @@ import mirage233 from "./images/mirage233.jpg";
 import odyssey251 from "./images/odyssey251.jpg";
 import odyssey252 from "./images/odyssey252.jpg";
 import odyssey253 from "./images/odyssey253.jpg";	
+import mirage201 from "./images/mirage201.jpg";
+import mirage202 from "./images/mirage202.jpg";
+import mirage203 from "./images/mirage203.jpg";
+import mirage181 from "./images/mirage181.jpg";
+import mirage182 from "./images/mirage182.jpg";
+import mirage183 from "./images/mirage183.jpg";
+import mirage151 from "./images/mirage151.jpg";
+import mirage152 from "./images/mirage152.jpg";
+import mirage153 from "./images/mirage153.jpg";
 
 //descriptif bateaux neufs
 const cardsTech = [
@@ -147,6 +156,54 @@ activités maritimes. Idéal pour vos croisières, vous y trouverez tout le conf
 		id: 6,
 		title: "Odyssey 25",
 		images: [odyssey251, odyssey252, odyssey253],
+		description:
+			"L'Odyssey 25 de TESYS International est un bateau de type day-boat conçu pour offrir des performances optimales et un confort exceptionnel lors de vos sorties en mer. Son design moderne et ses caractéristiques techniques en font un choix idéal pour les amateurs de navigation côtière.",
+		technicalDetails: {
+			length: 7.5,
+			width: 2.5,
+			draft: 0.6,
+			cabins: 0,
+			maxMotorization: 300,
+			passengerCapacity: 10,
+		},
+		teysisBoatsDescription: `Sa carène est spécialement étudiée pour assurer une bonne stabilité, une déflexion efficace et un confort optimal, quelles que soient les conditions météorologiques et l'état de la mer.  `,
+	},
+	{
+		id: 7,
+		title: "mirage 20",
+		images: [mirage201, mirage202, mirage203],
+		description:
+			"L'Odyssey 25 de TESYS International est un bateau de type day-boat conçu pour offrir des performances optimales et un confort exceptionnel lors de vos sorties en mer. Son design moderne et ses caractéristiques techniques en font un choix idéal pour les amateurs de navigation côtière.",
+		technicalDetails: {
+			length: 7.5,
+			width: 2.5,
+			draft: 0.6,
+			cabins: 0,
+			maxMotorization: 300,
+			passengerCapacity: 10,
+		},
+		teysisBoatsDescription: `Sa carène est spécialement étudiée pour assurer une bonne stabilité, une déflexion efficace et un confort optimal, quelles que soient les conditions météorologiques et l'état de la mer.  `,
+	},
+	{
+		id: 8,
+		title: "mirage 18",
+		images: [mirage181, mirage182, mirage183],
+		description:
+			"L'Odyssey 25 de TESYS International est un bateau de type day-boat conçu pour offrir des performances optimales et un confort exceptionnel lors de vos sorties en mer. Son design moderne et ses caractéristiques techniques en font un choix idéal pour les amateurs de navigation côtière.",
+		technicalDetails: {
+			length: 7.5,
+			width: 2.5,
+			draft: 0.6,
+			cabins: 0,
+			maxMotorization: 300,
+			passengerCapacity: 10,
+		},
+		teysisBoatsDescription: `Sa carène est spécialement étudiée pour assurer une bonne stabilité, une déflexion efficace et un confort optimal, quelles que soient les conditions météorologiques et l'état de la mer.  `,
+	},
+	{
+		id: 9,
+		title: "mirage 18",
+		images: [mirage151, mirage152, mirage153],
 		description:
 			"L'Odyssey 25 de TESYS International est un bateau de type day-boat conçu pour offrir des performances optimales et un confort exceptionnel lors de vos sorties en mer. Son design moderne et ses caractéristiques techniques en font un choix idéal pour les amateurs de navigation côtière.",
 		technicalDetails: {

@@ -14,6 +14,7 @@ import {
 
 const MakayDescriptions: React.FC = () => {
 	const { id } = useParams<{ id: string }>();
+	
 	const boat = boatsMakayData.find((b) => b.id === parseInt(id || "0", 10));
 
 	if (!boat) {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./teysis.module.css";
 import imageMirage33 from "../images/Mirage-33.jpg";

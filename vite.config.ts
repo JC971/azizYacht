@@ -13,4 +13,10 @@ export default defineConfig({
 			input: "./index.html", 
 		},
 	},
+	resolve: {
+		alias: {
+			"@": "/src",
+		},
+	},
+	
 });
