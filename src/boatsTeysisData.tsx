@@ -72,34 +72,9 @@ Côté motorisation, le Mirage 33 est équipé de moteurs performants, garantiss
 		},
 		teysisBoatsDescription: `L'intérieur de l'Odyssey 28 est intelligemment conçu pour maximiser l'espace et le confort. L'utilisation de bois de chêne français confère une ambiance moderne et chaleureuse. Le rembourrage intérieur standard est fourni par le tissu OPTIMA d'ITALVIPLA, avec diverses autres options disponibles sur demande. La cabine principale dispose d'un salon convertible qui se transforme en un couchage double, d'un espace de couchage indépendant pour deux personnes, d'une cuisine entièrement équipée et d'une salle de bain avec des toilettes manuelles. Ces espaces de vie bien pensés invitent à la détente et à la convivialité, ce qui en fait un choix idéal pour des sorties en famille ou des aventures entre amis.
 
-L'Odyssey 28 de TESYS International est un navire méticuleusement conçu qui allie harmonieusement élégance et fonctionnalité. Conçu par STAMA Design, ce bateau se distingue par son profil élancé et ses finitions raffinées. L'intérieur de l'Odyssey 28 est soigneusement pensé pour optimiser l'espace et le confort. L'utilisation de bois de chêne français apporte une ambiance moderne et cosy. Le rembourrage intérieur standard est assuré par le tissu OPTIMA d'ITALVIPLA, avec d'autres options disponibles sur demande. La cabine principale comprend un salon convertible en couchage double, un espace de couchage indépendant pour deux, une cuisine complète et une salle de bain avec toilettes manuelles. Ces espaces de vie bien aménagés favorisent la relaxation et les interactions sociales, parfaits pour des escapades en famille ou entre amis.
 
-Chauffe-eau
-Éclairage de pont en LED
-Évier extérieur en acier inoxydable
-Éclairage sous-marin
-Micro-ondes
-Pack Luxe :
 
-Revêtement de pont en teck
-Rembourrage extérieur par ITALVIPLA TROPICAL
-Rembourrage intérieur par ITALVIPLA FELIX
-Salon intérieur convertible en couchage
-Téléviseur avec lecteur DVD et antenne Glomex
-Toilettes électriques
-Pack Infini :
-
-Climatisation (9 000 BTU)
-Équipement de sécurité
-Combiné GPS et sonar
-Housse de protection pour la console
-Pilote automatique
-Préparation et mise à l'eau
-Propulseur d'étrave
-Radio VHF
-Remorque de transport
-Couverture de camping
-L'Odyssey 28 est conçu pour offrir une expérience de navigation exceptionnelle, alliant performance, confort et style. Ses caractéristiques bien pensées et ses packs optionnels permettent une personnalisation adaptée à divers préférences et besoins.`,
+`,
 	},
 	{
 		id: 3,

@@ -1,4 +1,4 @@
-import "../../styles/AboutTeysis.css";
+import "../../styles/Faq.css"
 
 const Faq = () => {
 	return (
