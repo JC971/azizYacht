@@ -40,7 +40,8 @@ export const theme = createTheme({
           borderRadius: "8px",
           textTransform: "none",
           padding: "12px 24px",
-          margin: "60px",
+          marginTop: "60px",
+          marginBottom: "30px"
         },
       },
     },

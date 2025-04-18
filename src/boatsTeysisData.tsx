@@ -41,9 +41,9 @@ const cardsTech = [
 		description:
 			"Le Mirage 33 est parfait pour la détente et les loisirs en mer. Alliant simplicité et fonctionnalité, il offre un aménagement confortable pour ceux qui recherchent des expériences de navigation sereines et agréables.",
 		technicalDetails: {
-			length: 33.5,
-			width: 11.67,
-			draft: 5,
+			length: 10,
+			width: 3.55,
+			draft: 0.65,
 			cabins: 2,
 			maxMotorization: 740,
 			passengerCapacity: 12,
@@ -63,10 +63,10 @@ Côté motorisation, le Mirage 33 est équipé de moteurs performants, garantiss
 		description:
 			"L'Odyssey 28 de TESYS International est un navire méticuleusement conçu qui allie harmonieusement élégance et fonctionnalité. Conçu par STAMA Design, ce bateau se distingue par son profil élancé et ses finitions raffinées. L'intérieur de l'Odyssey 28 est soigneusement pensé pour optimiser l'espace et le confort. L'utilisation de bois de chêne français apporte une ambiance moderne et cosy. Le rembourrage intérieur standard est assuré par le tissu OPTIMA d'ITALVIPLA, avec d'autres options disponibles sur demande. La cabine principale comprend un salon convertible en couchage double, un espace de couchage indépendant pour deux, une cuisine complète et une salle de bain avec toilettes manuelles. Ces espaces de vie bien aménagés favorisent la relaxation et les interactions sociales, parfaits pour des escapades en famille ou entre amis.",
 		technicalDetails: {
-			length: 28,
-			width: 9.25,
-			draft: 1.9,
-			cabins: 2,
+			length: 8.35,
+			width: 2.82,
+			draft: 0.5,
+			cabins: 1,
 			maxMotorization: 450,
 			passengerCapacity: 10,
 		},
@@ -83,12 +83,12 @@ Côté motorisation, le Mirage 33 est équipé de moteurs performants, garantiss
 		description:
 			"Le Mirage 30 est un bateau de la gamme Oceanic Line du constructeur TESYS International, reconnu pour ses performances et son design original.",
 		technicalDetails: {
-			length: 30,
-			width: 10.5,
+			length: 9.1,
+			width: 3.2,
 			draft: 4.8,
 			cabins: 2,
-			maxMotorization: 150,
-			passengerCapacity: 16,
+			maxMotorization: 600,
+			passengerCapacity: 10,
 		},
 		teysisBoatsDescription: `Le Mirage 18 de TESYS est un bateau compact mais polyvalent, conçu pour les familles et les petits groupes. Idéal pour des excursions d’une journée ou du camping nautique, il offre une combinaison parfaite de confort et de praticité. Sa structure légère et facile à manœuvrer le rend adapté à diverses activités aquatiques, telles que la pêche, la croisière ou la détente au bord de l’eau.
 
@@ -103,7 +103,7 @@ Grâce à sa conception réfléchie, le Mirage 18 maximise l’espace et la fonc
 		technicalDetails: {
 			length: 7.85,
 			width: 2.9,
-			draft: 1.1,
+			draft: 0,
 			cabins: 1,
 			maxMotorization: 400,
 			passengerCapacity: 14,
@@ -116,7 +116,7 @@ activités maritimes. Idéal pour vos croisières, vous y trouverez tout le conf
 		title: "Mirage 23",
 		images: [mirage231, mirage232, mirage233],
 		description:
-			"Le Mirage 23 de TESYS International est un bateau polyvalent conçu pour allier performance, confort et sécurité en mer. Il est idéal pour les sorties en famille, la pêche ou les loisirs nautiques.",
+			"Le Mirage 23 de TESYS International est un bateau semi-rigide polyvalent conçu pour allier performance, confort et sécurité en mer. Il est idéal pour les sorties en famille, la pêche ou les loisirs nautiques.",
 		technicalDetails: {
 			length: 7,
 			width: 2.8,
@@ -125,7 +125,7 @@ activités maritimes. Idéal pour vos croisières, vous y trouverez tout le conf
 			maxMotorization: 250,
 			passengerCapacity: 10,
 		},
-		teysisBoatsDescription: `Sa carène est spécialement étudiée pour assurer une bonne stabilité, une déflexion efficace et un confort optimal, quelles que soient les conditions météorologiques et l'état de la mer.  `,
+		teysisBoatsDescription: `Le Mirage 23 de TESYS International est un bateau semi-rigide polyvalent conçu pour allier performance, confort et sécurité en mer. Il est idéal pour les sorties en famille, la pêche ou les loisirs nautiques.. Sa carène est spécialement étudiée pour assurer une bonne stabilité, une déflexion efficace et un confort optimal, quelles que soient les conditions météorologiques et l'état de la mer.  `,
 	},
 	{
 		id: 6,
@@ -141,7 +141,7 @@ activités maritimes. Idéal pour vos croisières, vous y trouverez tout le conf
 			maxMotorization: 300,
 			passengerCapacity: 10,
 		},
-		teysisBoatsDescription: `Sa carène est spécialement étudiée pour assurer une bonne stabilité, une déflexion efficace et un confort optimal, quelles que soient les conditions météorologiques et l'état de la mer.  `,
+		teysisBoatsDescription: `L'Odyssey 25 de TESYS International est un bateau de type day-boat conçu pour offrir des performances optimales et un confort exceptionnel lors de vos sorties en mer. Son design moderne et ses caractéristiques techniques en font un choix idéal pour les amateurs de navigation côtière.. Sa carène est spécialement étudiée pour assurer une bonne stabilité, une déflexion efficace et un confort optimal, quelles que soient les conditions météorologiques et l'état de la mer.  `,
 	},
 	{
 		id: 7,

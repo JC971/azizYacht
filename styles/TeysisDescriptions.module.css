@@ -1,0 +1,206 @@
+.container {
+	padding: 2rem;
+	max-width: 1440px;
+	margin: auto;
+}
+
+.buttonBack {
+	margin-bottom: 2rem;
+}
+
+.title {
+	font-weight: 700;
+	color: var(--mui-primary-main);
+	text-align: center;
+	margin-bottom: 2.5rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+.notFound {
+	font-size: 2rem;
+	color: red;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.galleryBox {
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+		0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+.galleryImage {
+	width: 100%;
+	height: 500px;
+	object-fit: contain;
+}
+
+.techBox {
+	margin-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.techTitle {
+	color: var(--mui-primary-main);
+	color: #1976d2;
+
+	margin-bottom: 1rem;
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.detailCard {
+	padding: 1rem;
+	border-radius: 8px;
+	background-color: var(--mui-background-paper);
+	box-shadow: var(--mui-shadow-1);
+	background-color: #fff;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.12);
+
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	justify-content: center;
+}
+
+.detailCard p {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.responsiveCard {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.detailLabel {
+	font-size: 0.9rem;
+	opacity: 0.8;
+}
+
+.detailValue {
+	font-weight: 700;
+	font-size: 1.2rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.descriptionBox {
+	background-color: var(--mui-background-paper);
+	padding: 2rem;
+	border-radius: 12px;
+}
+
+.descriptionText {
+	line-height: 1.8;
+	text-align: justify;
+	margin-bottom: 1rem;
+}
+
+/* === Media Queries === */
+@media screen and (max-width: 900px) {
+	.container {
+		padding: 1rem;
+	}
+
+	.title {
+		font-size: 1.8rem;
+		letter-spacing: 1px;
+	}
+
+	.galleryImage {
+		height: 300px;
+	}
+
+	.responsiveCard {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.descriptionBox {
+		padding: 1rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.title {
+		font-size: 1.5rem;
+		text-align: left;
+	}
+
+	.buttonBack {
+		width: 100%;
+		text-align: left;
+		padding-left: 0;
+	}
+
+	.techTitle {
+		font-size: 1.2rem;
+	}
+
+	.descriptionText {
+		font-size: 0.95rem;
+	}
+}
+
+
+@media screen and (max-width: 430px) {
+  .container{
+    width:  430px;
+  }
+
+  .buttonBack{
+    width:100%;
+    margin-right: auto;
+    margin-left: auto;
+   
+  }
+	.detailCard {
+		min-height: 70px; /* garantit de la place */
+		overflow: visible;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.detailLabel,
+	.detailValue,
+	.descriptionText {
+		display: block;
+		visibility: visible;
+		overflow: visible;
+		white-space: normal;
+	}
+
+	.detailLabel {
+		font-size: 0.7rem;
+	}
+
+	.detailValue {
+		font-size: 0.8rem;
+	}
+
+	.techTitle {
+		font-size: 0.95rem;
+	}
+
+	.descriptionText {
+		font-size: 0.8rem;
+		line-height: 1.4;
+	}
+}
+
+@media screen and (max-width:375px){
+.container{
+  width: 375px;
+}
+.buttonBack{
+  color: red;
+}
+}

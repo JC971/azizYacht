@@ -1,3 +1,4 @@
+/*essai*/
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -8,7 +9,10 @@
 
 .hamburger-menu {
 	position: relative;
+
 }
+
+
 
 .hamburger-menu .navigation {
 	display: none;
@@ -20,6 +24,7 @@
 	background-color: #ddd;
 	box-shadow: 0 4px 8px rgba(94, 97, 104, 0.903);
 	z-index: 1000;
+	
 }
 
 nav.navigation.show {
@@ -40,6 +45,7 @@ nav.navigation.show {
 	font-size: 8px;
 	margin: 0;
 	padding: 10px;
+	
 }
 
 .hamburger-menu .navigation a:hover {
@@ -60,19 +66,22 @@ nav.navigation.show {
 		display: flex; /* Affiche le menu hamburger */
 		align-items: center;
 		text-align: left;
+		
 	}
 
 	.navigation.show {
 		width: 100%;
 		background-color: RGB(86, 133, 160);
+		
 	}
 	.hamburger-menu {
-		width: 100px;
+		width: 100%;
+
 	}
+	
 
 	.navigation.show a {
-		text-transform: lowercase;
-		letter-spacing: 0;
+	letter-spacing: 0;
 		font-size: 12px;
 		padding: 0;
 		margin-left: 0;
@@ -81,6 +90,6 @@ nav.navigation.show {
 		border: none;
 		text-transform: uppercase;
 		line-height: 2;
-		z-index: 1000;
+		z-index: 1000;	
 	}
 }

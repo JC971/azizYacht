@@ -2,9 +2,18 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import boatsData from "../src/boatsTeysisData"; // Le fichier contenant tous les bateaux
 import styles from "../styles/boatDetails.module.css";
-import { Table, TableBody, TableCell, TableContainer, TableRow, Paper, Typography, Box, Button } from "@mui/material";
-import { Grid } from "@mui/material"; // Peut-être manquant
-
+import {
+	Table,
+	TableBody,
+	TableCell,
+	TableContainer,
+	TableRow,
+	Paper,
+	Typography,
+	Box,
+	Button,
+} from "@mui/material";
+import Grid from "@mui/material/Grid";
 
 const BoatDetails: React.FC = () => {
 	const { id } = useParams<{ id: string }>(); // Récupérer l'ID depuis l'URL
@@ -17,7 +26,9 @@ const BoatDetails: React.FC = () => {
 					Bateau non trouvé
 				</Typography>
 				<Link to="/">
-					<Button variant="contained" sx={{ marginTop: 2 }}>Retour aux bateaux</Button>
+					<Button variant="contained" sx={{ marginTop: 2 }}>
+						Retour aux bateaux
+					</Button>
 				</Link>
 			</Box>
 		);
@@ -25,7 +36,10 @@ const BoatDetails: React.FC = () => {
 
 	return (
 		<Box sx={{ padding: 3 }}>
-			<Typography variant="h4" sx={{ textAlign: "center", marginBottom: 4, marginTop: 9 }}>
+			<Typography
+				variant="h4"
+				sx={{ textAlign: "center", marginBottom: 4, marginTop: 9 }}
+			>
 				{boat.title}
 			</Typography>
 
