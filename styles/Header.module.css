@@ -4,13 +4,19 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.9);
+  
+  
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ 
 }
 
-
+a.navLink{
+ letter-spacing: 2px;
+font-weight: 600;
+}
 .scrolled {
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -59,6 +65,7 @@
   position: relative;
   transition: all 0.3s ease;
   text-decoration: none;
+  
 }
 
 
@@ -92,6 +99,11 @@
 @media (max-width: 1440px){
   a.navLink{
     padding: 0;
+  }
+}
+@media (max-width: 1440px){
+  a.navLink{
+    letter-spacing: 2px;
   }
 }
 

@@ -2,7 +2,6 @@
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 20px;
-	font-family: Arial, sans-serif;
 	padding-top: 200px;
 }
 .container {
@@ -26,8 +25,9 @@
 .title {
 	font-weight: bold;
 	margin-bottom: 20px;
-	color: #333333;
-	font-size: 3.2rem;
+	font-size: 3rem;
+	color: #004080;
+	letter-spacing: 2px;
 }
 
 .faq-item {
@@ -49,6 +49,7 @@
 }
 h2 {
 	color: #004080;
+	font-weight: 900;
 }
 
 .faq-question:hover {
@@ -69,24 +70,25 @@ h2 {
 }
 
 @media (max-width: 768px) {
-.title {
-font-size: 2.8rem;
-}
-h2{
-  font-size: 28px;
-}
+	.title {
+		font-size: 2.8rem;
+	}
+	h2 {
+		font-size: 28px;
+	}
 }
 
-@media (max-width:430px){
-  h2{
-    font-size: 1.1rem;
-  }
+@media (max-width: 430px) {
+	h2 {
+		font-size: 1.1rem;
+		font-weight: 600;
+	}
+	.title {
+		font-size: 1.8rem;
+	}
 }
-@media (max-width:375px){
-  .title{
-  font-size: 2rem
-  }
-  h2{
-    font-size: .9rem;
-  }
+@media (max-width: 375px) {
+	h2 {
+		font-size: 1.1rem;
+	}
 }

@@ -2,18 +2,28 @@
 	max-width: 900px;
 	margin: 0 auto;
 	padding: 20px;
-	font-family: Arial, sans-serif;
 	color: #333;
 	padding-top: 100px;
 }
 
 h1 {
 	text-align: center;
+	font-family: "Playfair Display", serif;
+	font-weight: 600;
+	margin-bottom: 20px;
+	color: #004080;
+	letter-spacing: 2px;
+}
+
+.service-section h2 {
+	color: #004080;
+	font-family: "Playfair Display", serif;
 }
 
 p {
 	line-height: 1.6;
 }
+
 
 .service-section {
 	margin: 20px 0;
@@ -23,9 +33,7 @@ p {
 	border-radius: 5px;
 }
 
-.service-section h2 {
-	color: #004080;
-}
+
 
 .service-section ul {
 	list-style: none;
@@ -48,4 +56,14 @@ p {
 h1{
  font-size: 1.8rem
  }
+ h2{
+	font-size: 1.1rem;
+	font-weight: 600;
+ }
+}
+@media (max-width:375px){
+ 
+  h2{
+    font-size: 1.1rem;
+  }
 }

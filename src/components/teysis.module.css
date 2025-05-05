@@ -6,28 +6,29 @@
 	margin-right: auto;
 	background-color: #ffff;
 	flex-wrap: wrap;
+	
 }
 .teysisTitle {
 	text-align: center;
 	letter-spacing: 5px;
 	color: #004587;
-	background-color: #ffff;
 	padding: 60px 0;
 	padding: 40px 0;
 	margin-bottom: 0;
 	margin-top: 50px;
 	text-transform: uppercase;
-	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+	font-weight: 700;
 	font-size: 2rem;
+	font-family: "Playfair Display", serif;
+	letter-spacing: 2px;
 }
-.mirage18{
-text-align: center;
+.mirage18 {
+	text-align: center;
 	margin-top: 30px;
 	width: 100%;
-	
 }
 
-.mirage18 img{
+.mirage18 img {
 	width: 100%;
 	object-fit: contain;
 }
@@ -47,9 +48,10 @@ text-align: center;
 	margin: 15px;
 	color: #003366;
 	text-transform: uppercase;
-	font-weight: bold;
-	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-	letter-spacing: 3px;
+	font-weight: bolder;
+	
+	letter-spacing: 2px;
+	font-family: "Playfair Display", serif;
 }
 
 .cardImage {
@@ -69,11 +71,15 @@ text-align: center;
 	height: 120px;
 	font-weight: 500;
 	margin: 20px 0 10px 0;
-	width:100%;
+	width: 100%;
 	padding: 0 20px;
 	margin-right: auto;
 	margin-left: auto;
+	color: rgba(0, 0, 0, 0.87);
+	font-weight: 400;
+	
 }
+
 
 .cardImageContainer {
 	position: relative;
@@ -110,29 +116,27 @@ text-align: center;
 	padding: 20px;
 }
 .fadeImage {
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+	transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .fadeOut {
-  opacity: 0;
-  transform: translateY(-20px); /* Déplace l'image vers le haut */
+	opacity: 0;
+	transform: translateY(-20px); /* Déplace l'image vers le haut */
 }
 .zoomFadeOut {
-  opacity: 0;
-  transform: scale(0.8); /* Réduit légèrement l'image */
-  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+	opacity: 0;
+	transform: scale(0.8); /* Réduit légèrement l'image */
+	transition: opacity 2s ease-in-out, transform 2s ease-in-out;
 }
 
-
-
-
 @media (max-width: 1440px) {
-	.cardsContainer{
-	padding: 0;
+	.cardsContainer {
+		padding: 0;
 	}
-
-	.cardDescription{
-		height:160px;
+	
+	.cardDescription {
+		height: 160px;
+		
 	}
 	.teysisTitle {
 		font-size: 2rem;
@@ -141,7 +145,6 @@ text-align: center;
 	.cardImage {
 		object-fit: contain;
 		margin-bottom: 0;
-		
 	}
 }
 
@@ -154,7 +157,6 @@ text-align: center;
 		width: 48%;
 		flex-wrap: wrap;
 		margin-bottom: 20px;
-		
 	}
 	.cardImage {
 		width: 100%;
@@ -171,17 +173,26 @@ text-align: center;
 @media (max-width: 768px) {
 	.cardsContainer {
 		max-width: 768px;
-		flex-direction: column;
+	
 		padding: 0;
+		
 	}
 	.card {
-		width: 100%;
+		width: 80%;
 		margin: 0 auto;
 		padding: 0;
 	}
+	.cardTitle{
+		margin-top: 40px;
+		margin-bottom: 0;
+	}
+	.cardImageContainer{
+		width: 100%;
+	}
+
 	.cardDescription {
-		margin: 10px;
-		max-width: 768px;
+		max-width:100%;
+		height: 150px;
 	}
 	.cardImage {
 		margin: 20px 0;
@@ -190,7 +201,7 @@ text-align: center;
 		margin-bottom: 20px;
 	}
 }
-@media (max-width: 425px) {
+@media (max-width: 430px) {
 	.cardsContainer {
 		display: flex;
 		flex-direction: row;
@@ -199,9 +210,13 @@ text-align: center;
 		margin-left: auto;
 		margin-right: auto;
 		flex-wrap: wrap;
+		max-width: none;
 	}
 	.card {
 		margin-bottom: 10px;
+		width: 90%;
+		padding: 0;
+		 margin: 0 auto 10px auto; 
 	}
 	.cardImage {
 		object-fit: contain;
@@ -209,34 +224,50 @@ text-align: center;
 	}
 	.cardDescription {
 		padding: 8px;
-		margin-top: 0;
+		box-sizing: border-box;
+		display: block;
+		height: 220px;
+		
+	margin: 0;
+		width: 100%;
 	}
+
+
 	.teysisTitle {
 		text-align: center;
-		font-size: 16px;
-		letter-spacing: 3px;
+		font-size: 1.8rem;
 		color: #004587;
+		
 	}
 }
 
 @media (max-width: 375px) {
+	.card{
+		margin-top: 20px;
+	}
 	.teysisTitle {
 		text-align: center;
-		font-size: 14px;
+		font-size: 1.3rem;
+		font-weight: 800;
 		letter-spacing: 3px;
 		color: #004587;
+		padding-bottom: 10px;
 	}
+
 	.cardDescription {
-		display: block;
 		font-size: 14px;
+		height: 150px;
+		font-weight: 600;
 	}
 	.cardImage {
 		height: 300px;
 	}
 	.logoImage {
 		width: 160px;
+		margin-bottom: 10px;
 	}
-	.cardTitle {
+	.cardTitle :first-child {
 		color: #213547;
+		
 	}
 }

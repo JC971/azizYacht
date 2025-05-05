@@ -47,7 +47,6 @@
 .techTitle {
 	color: var(--mui-primary-main);
 	color: #1976d2;
-
 	margin-bottom: 1rem;
 	font-weight: 600;
 	font-size: 1.5rem;
@@ -148,18 +147,16 @@
 	}
 }
 
-
 @media screen and (max-width: 430px) {
-  .container{
-    width:  430px;
-  }
+	.container {
+		width: 430px;
+	}
 
-  .buttonBack{
-    width:100%;
-    margin-right: auto;
-    margin-left: auto;
-   
-  }
+	.buttonBack {
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+	}
 	.detailCard {
 		min-height: 70px; /* garantit de la place */
 		overflow: visible;
@@ -196,11 +193,11 @@
 	}
 }
 
-@media screen and (max-width:375px){
-.container{
-  width: 375px;
-}
-.buttonBack{
-  color: red;
-}
+@media screen and (max-width: 375px) {
+	.container {
+		width: 375px;
+	}
+	.buttonBack {
+		color: red;
+	}
 }
