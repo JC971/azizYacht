@@ -3,7 +3,7 @@ import boatsTeysisData from "../src/boatsTeysisData";
 import { ThemeProvider, CssBaseline, Box, Button, Grid } from "@mui/material";
 import { theme } from "./theme/theme"; // Thème externalisé
 import { ArrowBack } from "@mui/icons-material";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+//import { LazyLoadImage } from "react-lazy-load-image-component";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import styles from "../styles/TeysisDescriptions.module.css";
@@ -92,10 +92,9 @@ const TeysisDescriptions = () => {
 								showPlayButton={false}
 								showFullscreenButton={true}
 								renderItem={(item) => (
-									<LazyLoadImage
+									<img
 										src={item.original}
 										alt={item.originalAlt}
-										effect="opacity"
 										className={styles.galleryImage}
 									/>
 								)}

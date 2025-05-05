@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import "../src/header.css";
+
 import "../styles/popup.css";
 import "./index.css";
 import Header from "./components/Header";

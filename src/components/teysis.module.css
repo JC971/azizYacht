@@ -12,8 +12,8 @@
 	text-align: center;
 	letter-spacing: 5px;
 	color: #004587;
-	padding: 60px 0;
-	padding: 40px 0;
+	
+	padding: 70px 0 10px 0;
 	margin-bottom: 0;
 	margin-top: 50px;
 	text-transform: uppercase;
@@ -238,7 +238,9 @@
 		font-size: 1.8rem;
 		color: #004587;
 		
+		
 	}
+
 }
 
 @media (max-width: 375px) {
