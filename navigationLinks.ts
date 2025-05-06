@@ -1,4 +1,3 @@
-
 export const navigationLinks = [
 	{ path: "/home", label: "ACCUEIL" },
 	{ path: "/new", label: "NEUF" },

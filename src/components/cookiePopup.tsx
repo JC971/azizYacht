@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-
+import "../../styles/cookiePopUp.css"
 
 
 const CookiePopup = () => {

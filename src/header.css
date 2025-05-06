@@ -3,7 +3,7 @@
 	width: 100%;
 	background-color: RGB(86, 133, 160);
 	background-color: #f8f8f8;
-	top: 0;
+	top:0px;
 	z-index: 2000;
 
 }
@@ -56,13 +56,8 @@ header {
 	opacity: 1;
 	height: 30px;
 }
-/*
-.menu-toggle {
-	display: block;
-	margin-right: 50px;
-	color: #ffffff;
-}*/
-/* Styles du menu hamburger */
+
+ Styles du menu hamburger 
 .hamburger-menu .menu-toggle {
 	font-size: 18px;
 	cursor: pointer;
@@ -72,9 +67,8 @@ header {
 	z-index: 1001;
 	margin-right: 15px;
 	color: #ffffff;
-	color: black;
-	
 }
+
 
 @keyframes slideInOut {
 	0% {
@@ -127,6 +121,7 @@ header {
 	}
 	.nav{
 		width: 768px;
+		border: solid red 10px;
 		
 	}
 	
@@ -153,5 +148,6 @@ header {
 @media (max-width:320px){
 	.nav{
 		max-width: 320px;
+		
 	}
 }

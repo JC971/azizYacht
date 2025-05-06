@@ -1,4 +1,3 @@
-/*essai*/
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -9,10 +8,9 @@
 
 .hamburger-menu {
 	position: relative;
-
+	text-align: center;
+	width: 120px;
 }
-
-
 
 .hamburger-menu .navigation {
 	display: none;
@@ -21,10 +19,8 @@
 	top: 60px;
 	right: 0;
 	width: 30%;
-	background-color: #ddd;
 	box-shadow: 0 4px 8px rgba(94, 97, 104, 0.903);
 	z-index: 1000;
-	
 }
 
 nav.navigation.show {
@@ -34,18 +30,16 @@ nav.navigation.show {
 .navigation.show {
 	position: absolute;
 	top: 50px;
-	right: 10px;
 	text-align: center;
-	padding: 0;
 }
 
 .hamburger-menu .navigation a {
 	text-decoration: none;
 	border-bottom: 1px solid #ddd;
-	font-size: 8px;
+	font-size: 10px;
 	margin: 0;
 	padding: 10px;
-	
+	width: 100%;
 }
 
 .hamburger-menu .navigation a:hover {
@@ -55,6 +49,15 @@ nav.navigation.show {
 /* Afficher la navigation mobile si isOpen est true */
 .hamburger-menu .navigation.show {
 	display: flex; /* Affiche le menu hamburger lorsqu’il est ouvert */
+	width: 130px;
+	height: 140px;
+	border-radius: 8px;
+}
+.hamburger-menu .navigation.show a {
+	line-height: 15px;
+	padding: 5px 5px;
+	font-size: 9px;
+	font-weight: 800;
 }
 
 /* Responsive styles */
@@ -65,24 +68,26 @@ nav.navigation.show {
 	.mobile-navigation {
 		display: flex; /* Affiche le menu hamburger */
 		align-items: center;
-		text-align: left;
-		
+		text-align: right;
+	}
+	.menu-toggle {
+		width: 100%;
+	}
+	.hamburger-menu {
+		width: 400px;
 	}
 
 	.navigation.show {
 		width: 100%;
 		background-color: RGB(86, 133, 160);
-		
 	}
 	.hamburger-menu {
-		width: 100%;
-
+		width: 120%;
 	}
-	
 
 	.navigation.show a {
-	letter-spacing: 0;
-		font-size: 12px;
+		letter-spacing: 0;
+		font-size: 8px;
 		padding: 0;
 		margin-left: 0;
 		color: whitesmoke;
@@ -90,6 +95,8 @@ nav.navigation.show {
 		border: none;
 		text-transform: uppercase;
 		line-height: 2;
-		z-index: 1000;	
+		z-index: 1000;
+		font-weight: 700;
+		letter-spacing: 2px;
 	}
 }

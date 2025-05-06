@@ -80,7 +80,6 @@
 	
 }
 
-
 .cardImageContainer {
 	position: relative;
 	display: flex;
@@ -97,6 +96,7 @@
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 	margin-top: 10px;
+	font-weight: 700;
 }
 
 .viewDetailsButton:hover {
@@ -173,9 +173,7 @@
 @media (max-width: 768px) {
 	.cardsContainer {
 		max-width: 768px;
-	
 		padding: 0;
-		
 	}
 	.card {
 		width: 80%;

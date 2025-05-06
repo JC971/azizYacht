@@ -1,112 +1,4 @@
-/*
-import { useState, FormEvent } from "react";
-import '../../styles/contentContact.css';
-import contactImage from "../images/odyssey-28.jpg"
 
-const Contact = () => {
-	const [formData, setFormData] = useState({
-		name: "",
-		email: "",
-		message: "",
-	});
-
-	const handleChange = (
-		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-	) => {
-		setFormData({
-			...formData,
-			[e.target.name]: e.target.value,
-		});
-	};
-
-	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-		e.preventDefault();
-
-		// Validation optionnelle
-		if (!formData.name || !formData.email || !formData.message) {
-			alert("Tous les champs sont requis.");
-			return;
-		}
-
-		try {
-			const response = await fetch("http://localhost:5000/api/contact", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify(formData),
-			});
-
-			if (response.ok) {
-				const data = await response.json();
-				console.log("Réponse du serveur : ", data);
-				alert("Votre message a été envoyé avec succès !");
-				setFormData({
-					name: "",
-					email: "",
-					message: "",
-				});
-			} else {
-				console.error("Erreur lors de l'envoi du message");
-				alert("Une erreur est survenue. Réessayez.");
-			}
-		} catch (error) {
-			console.error("Erreur lors de l'envoi des données au serveur :", error);
-			alert(
-				"Impossible de se connecter au serveur. Vérifiez votre connexion ou contactez l'administrateur."
-			);
-		}
-	};
-
-	return (
-		<>
-			<div className="contactImage">
-				<img src={contactImage} alt="" />
-			</div>
-			<div className="formulaire">
-				<h2 className="formTitle">Nous Contacter</h2>
-				<form onSubmit={handleSubmit} className="form-contact">
-					<div className="nameDiv">
-						<label htmlFor="name">Name:</label>
-						<input
-							type="text"
-							id="name"
-							name="name"
-							value={formData.name}
-							onChange={handleChange}
-							required
-						/>
-					</div>
-					<div className="emailDiv">
-							<label htmlFor="email">Email:</label>
-							<input
-								type="email"
-								id="email"
-								name="email"
-								value={formData.email}
-								onChange={handleChange}
-								required
-							/>
-					</div>
-					<div className="messageDiv" >
-						<label htmlFor="message">Message:</label>
-						<textarea
-							id="message"
-							name="message"
-							value={formData.message}
-							onChange={handleChange}
-							required
-						/>
-					</div>
-					<button type="submit">Send Message</button>
-				</form>
-			</div>
-		</>
-	);
-};
-
-export default Contact;
-*/
 import { useState, FormEvent } from "react";
 import "../../styles/contentContact.css";
 
@@ -115,6 +7,7 @@ const Contact = () => {
 		name: "",
 		email: "",
 		message: "",
+		botField: "", // honeypot
 	});
 
 	const [loading, setLoading] = useState(false);
@@ -128,11 +21,14 @@ const Contact = () => {
 			...formData,
 			[e.target.name]: e.target.value,
 		});
-		setError(""); // reset error message
+		setError("");
 	};
 
 	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
+
+		// honeypot check
+		if (formData.botField) return;
 
 		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 		if (!formData.name || !formData.email || !formData.message) {
@@ -158,7 +54,7 @@ const Contact = () => {
 
 			if (response.ok) {
 				setSuccess(true);
-				setFormData({ name: "", email: "", message: "" });
+				setFormData({ name: "", email: "", message: "", botField: "" });
 			} else {
 				setError("Une erreur est survenue. Réessayez.");
 			}
@@ -170,14 +66,31 @@ const Contact = () => {
 	};
 
 	return (
-		<>
-			<div className="formulaire">
-				<h2 className="formTitle">Nous Contacter</h2>
+		<div className="formulaire">
+			<h2 className="formTitle">Nous Contacter</h2>
+
+			{success ? (
+				<div className="success-container" aria-live="polite">
+					<p className="success-message">
+						✅ Votre message a bien été envoyé !
+					</p>
+				</div>
+			) : (
 				<form
 					onSubmit={handleSubmit}
 					className="form-contact"
 					aria-label="Formulaire de contact"
 				>
+					{/* honeypot */}
+					<input
+						type="text"
+						name="botField"
+						style={{ display: "none" }}
+						onChange={handleChange}
+						value={formData.botField}
+						autoComplete="off"
+					/>
+
 					<div className="nameDiv">
 						<label htmlFor="name">Nom :</label>
 						<input
@@ -189,8 +102,10 @@ const Contact = () => {
 							required
 							aria-required="true"
 							aria-label="Nom"
+							aria-invalid={!!error && !formData.name}
 						/>
 					</div>
+
 					<div className="emailDiv">
 						<label htmlFor="email">Email :</label>
 						<input
@@ -202,8 +117,10 @@ const Contact = () => {
 							required
 							aria-required="true"
 							aria-label="Email"
+							aria-invalid={!!error && !formData.email}
 						/>
 					</div>
+
 					<div className="messageDiv">
 						<label htmlFor="message">Message :</label>
 						<textarea
@@ -214,14 +131,17 @@ const Contact = () => {
 							required
 							aria-required="true"
 							aria-label="Message"
+							aria-invalid={!!error && !formData.message}
+							maxLength={1000}
 						/>
 					</div>
-					{error && <p className="error-message">{error}</p>}
-					{success && (
-						<p className="success-message">
-							Votre message a été envoyé avec succès !
+
+					{error && (
+						<p className="error-message" aria-live="assertive">
+							{error}
 						</p>
 					)}
+
 					<button type="submit" disabled={loading}>
 						{loading ? (
 							<>
@@ -233,8 +153,8 @@ const Contact = () => {
 						)}
 					</button>
 				</form>
-			</div>
-		</>
+			)}
+		</div>
 	);
 };
 

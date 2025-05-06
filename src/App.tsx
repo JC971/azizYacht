@@ -6,6 +6,7 @@ import "./index.css";
 import Header from "./components/Header";
 import Footer from "./pages/Footer";
 import CookiePopup from "./components/cookiePopup";
+import Confidentialite from "./components/confidentialite";
 
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -37,9 +38,13 @@ function App() {
 						<Route path="/contact" element={<Contact />} />
 						<Route path="/faq" element={<FAQ />} />
 						<Route path="/services" element={<Services />} />
+						<Route path="/confidentialite" element={<Confidentialite />} />
 
 						{/* ✅ Route dynamique correcte pour afficher les détails d'un bateau */}
-						<Route path="/home/teysis/details/:id" element={<TeysisDescriptions />} />
+						<Route
+							path="/home/teysis/details/:id"
+							element={<TeysisDescriptions />}
+						/>
 
 						{/* Page 404 si la route n'existe pas */}
 						<Route path="*" element={<NotFound />} />

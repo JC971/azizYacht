@@ -1,7 +1,8 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+//import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import styles from "./Footer.module.css"; // Importez le module CSS
 import { Link } from "react-router-dom";
+
 
 const Footer: React.FC = () => {
 	return (
@@ -12,6 +13,8 @@ const Footer: React.FC = () => {
 					<Link to="/contact">Contact</Link>
 					<Link to="/faq">FAQ</Link>
 				</div>
+				<Link to="/Confidentialite">Politique de confidentialité</Link>
+				{/* 
 				<div className={styles.footerSocial}>
 					<a
 						href="https://facebook.com"
@@ -35,7 +38,10 @@ const Footer: React.FC = () => {
 						<FaTwitter />
 					</a>
 				</div>
-
+				
+*/}
+				
+				
 				<div className={styles.footerCopyright}>
 					&copy; {new Date().getFullYear()} MAZIZ. All rights reserved.
 				</div>

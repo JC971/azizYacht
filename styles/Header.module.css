@@ -46,7 +46,7 @@ font-weight: 600;
 }
 
 .logoImage {
-  height: 40px;
+  height: 30px;
   width: auto;
   transition: all 0.3s ease;
 }
@@ -121,7 +121,7 @@ font-weight: 600;
   }
 
   .logoImage {
-    height: 35px;
+    height: 30px;
   }
 }
 
@@ -131,6 +131,6 @@ font-weight: 600;
   }
 
   .logoImage {
-    height: 30px;
+    height: 25px;
   }
 }
